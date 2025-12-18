@@ -526,3 +526,210 @@ div#headlessui-dialog-panel-\:r1\: {
 
 })();
 </script>
+
+
+
+
+
+
+
+
+
+
+<style>
+    footer, .site-footer, .footer-section, #footer, .footer, div[class*="footer-wrapper"] {
+        display: none !important;
+    }
+    #chic-footer-wrapper {
+        display: block !important;
+        background-color: #121212 !important;
+        background: #121212 !important;
+        color: #e5e5e5 !important;
+        padding: 24px 5px 14px;
+        direction: rtl;
+        text-align: right;
+        margin-top: 50px;
+        width: 100%;
+        position: relative;
+        z-index: 999; 
+        box-sizing: border-box;
+    }
+
+    .chic-footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    .chic-col { 
+        flex: 1; 
+        min-width: 200px; 
+    } 
+    .chic-col.brand-col { 
+        flex: 1.5; 
+        min-width: 280px; 
+    }
+    #chic-footer-wrapper .chic-col.brand-col{
+        text-align: center !important;
+    }
+    #chic-footer-wrapper .chic-logo{
+        text-align: center !important;
+    }
+    #chic-footer-wrapper .chic-desc{
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    #chic-footer-wrapper .chic-social{
+        justify-content: center !important;
+    }
+    .chic-logo {
+        font-size: 28px;
+        font-weight: 800;
+        color: #ffffff !important;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+        display: block;
+    }
+
+    .chic-desc {
+        color: #b0b0b0 !important; 
+        font-size: 14px;
+        line-height: 1.8;
+        max-width: 320px;
+        margin-bottom: 25px;
+    }
+    .chic-title {
+        font-size: 18px;
+        color: #ffffff !important;
+        font-weight: 700;
+        margin-bottom: 25px;
+        position: relative;
+        display: inline-block;
+        font-family: sans-serif; 
+    }
+
+    .chic-title::after {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        right: 0;
+        width: 30px;
+        height: 2px;
+        background-color: #FBA30D;
+    }
+    .chic-links { list-style: none; padding: 0; margin: 0; }
+    .chic-links li { margin-bottom: 12px; }
+    .chic-links a {
+        color: #b0b0b0 !important;
+        text-decoration: none;
+        font-size: 14px;
+        transition: 0.3s;
+        display: inline-block;
+    }
+    .chic-links a:hover {
+        color: #FBA30D !important;
+        transform: translateX(-5px);
+    }
+
+    .chic-social { display: flex; gap: 12px; }
+    .social-btn {
+        width: 38px; height: 38px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.1);
+        display: flex; align-items: center; justify-content: center;
+        transition: 0.3s; border: 1px solid rgba(255,255,255,0.2);
+    }
+    .social-btn svg { width: 18px; height: 18px; fill: #ffffff !important; }
+    .social-btn:hover {
+        background: #FBA30D; border-color: #FBA30D; transform: translateY(-3px);
+    }
+    .chic-divider {
+        height: 1px;
+        background: #333 !important;
+        margin: 9px 0 12px;
+        width: 100%;
+        opacity: 0.5;
+    }
+    .chic-bottom-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+    }
+    .chic-copyright { font-size: 13px; color: #888 !important; }
+    .payment-icons {
+        display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+    .pay-icon {
+          width: 45px; height: 28px; border-radius: 4px;
+        display: flex; align-items: center; justify-content: center; padding: 2px;  transition: opacity .2s ease; object-fit: contain;
+    opacity: 0.9;
+    }
+    .pay-icon svg { max-width: 100%; max-height: 100%; }
+    @media (max-width: 768px) {
+        .chic-footer-container { flex-direction: column; gap: 40px; }
+        #chic-footer-wrapper { text-align: center; }
+        .chic-title::after { right: 50%; transform: translateX(50%); } 
+        .chic-links a:hover { transform: none; }
+        .chic-social { justify-content: center; }
+    }
+#chic-footer-wrapper .chic-bottom-bar{
+  display: flex;
+  flex-direction: column;
+}
+#chic-footer-wrapper .chic-bottom-bar .chic-copyright{
+  order: 1;
+}
+#chic-footer-wrapper .chic-bottom-bar .payment-icons{
+  order: 2;
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+        if (document.getElementById('chic-footer-wrapper')) return;
+    const footerHTML = `
+    <div id="chic-footer-wrapper">
+        <div class="chic-footer-container">
+            
+            <div class="chic-col brand-col">
+                <div class="chic-logo">GRYPX™</div>
+                <p class="chic-desc">
+                    نحن نؤمن بأن المعدات المناسبة تصنع الفارق. منتجات مصممة للرياضيين الذين يطمحون للأفضل.
+                </p>
+                <div class="chic-social">
+                    <a href="#" class="social-btn"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg></a>
+                    <a href="#" class="social-btn"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"></path></svg></a>
+                </div>
+            </div>
+
+            <div class="chic-col">
+                <h3 class="chic-title">روابط تهمك</h3>
+                <ul class="chic-links">
+                    <li><a href="/">الرئيسية</a></li>
+                    <li><a href="/collections/gym-tool">المنتجات</a></li>
+                    <li><a href="/pages/about">من نحن</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="chic-divider"></div>
+
+        <div class="chic-bottom-bar">
+            <div class="payment-icons">
+                <img src="https://white.a.bigcontent.io/v1/static/mastercard_1" alt="Mastercard" class="pay-icon">
+            <img src="https://white.a.bigcontent.io/v1/static/visa_1" alt="Visa" class="pay-icon">
+            </div>
+            <div class="chic-copyright">
+            &copy; 2025 Fit Crop. جميع الحقوق محفوظة.
+          </div>
+        </div>
+    </div>
+    `;
+
+    document.body.insertAdjacentHTML('beforeend', footerHTML);
+});
+</script>
