@@ -249,15 +249,84 @@ svg.absolute.-z-10.bottom-0.left-0.w-full.h-auto.text-skin-primary\/50 {
   background-image: url("https://img.icons8.com/ios-filled/50/menu--v6.png") !important;
 }
 
-/* بحث */
 .default_header a[href="/search"]{
   background-image: url("https://img.icons8.com/ios-filled/50/search--v1.png") !important;
 }
 
-/* كارت */
 .default_header button.group{
   background-image: url("https://img.icons8.com/parakeet-filled/48/shopping-cart.png") !important;
 }
+div:has(> button[aria-label="Add to cart"]){
+}
+
+div:has(> button[aria-label="Add to cart"]) > button svg{
+  display: none !important;
+}
+div:has(> button[aria-label="Add to cart"]) > button{
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 22px 22px !important;
+}
+.py-\[18px\] {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+/* الموبايل */
+@media (max-width: 767px){
+  div:has(> button[aria-label="Add to cart"]) > button{
+    width: 28px;
+    height: 28px;
+    background-size: 20px 20px !important;
+  }
+}
+div:has(> button[aria-label="Add to cart"]) > button:first-child{
+  background-image: url("https://img.icons8.com/fluency-systems-regular/48/visible--v1.png") !important;
+}
+
+div:has(> button[aria-label="Add to cart"]) > button[aria-label="Add to cart"]{
+  background-image: url("https://img.icons8.com/parakeet-filled/48/shopping-cart.png") !important;
+}
+div:has(> button[aria-label="Add to cart"]) > button:first-child:hover{
+  background-image: url("https://img.icons8.com/fluency-systems-regular/48/visible--v1.png") !important;
+}
+div:has(> button[aria-label="Add to cart"] ) > button[aria-label="Add to cart"]:hover{
+  background-image: url("https://img.icons8.com/parakeet-filled/48/shopping-cart.png") !important;
+}
+.animate-slideIn.w-fit.mx-auto.mt-2.md\:mt-4.flex.gap-2\.5.items-center.text-sm.md\:text-base.font-semibold.border-2.border-\[\#E2E2E2\].rounded-2xl.py-3.px-7.md\:px-10.cursor-pointer.hover\:bg-skin-primary.hover\:text-skin-a11y.hover\:border-skin-primary {
+    DISPLAY: NONE;
+}
+.grid.sm\:grid-cols-3.lg\:grid-cols-4.grid-cols-2.gap-x-3.gap-y-3.md\:gap-x-5.xl\:gap-x-7.xl\:gap-y-5.\32 xl\:gap-y-8.\32 xl\:grid-cols-5.home_products_grid_container {
+   grid-template-columns: repeat(1, minmax(0, 1fr));
+    GAP: 80PX;
+}
+/* يمين لبيانات المنتج (يشتغل في الـgrid والـlist) */
+.home_products_grid_container .text-center.w-full.px-2.cursor-pointer,
+.flex.flex-row.overflow-x-auto .text-center.w-full.px-2.cursor-pointer{
+  text-align: right !important;
+}
+.home_products_grid_container .text-center.w-full.px-2.cursor-pointer h3.text-center,
+.flex.flex-row.overflow-x-auto .text-center.w-full.px-2.cursor-pointer h3.text-center{
+  text-align: right !important;
+FONT-SIZE: larger;
+    FONT-WEIGHT: bold;
+}
+.home_products_grid_container .text-center.w-full.px-2.cursor-pointer .flex.items-center.justify-center,
+.flex.flex-row.overflow-x-auto .text-center.w-full.px-2.cursor-pointer .flex.items-center.justify-center{
+  justify-content: flex-start !important;
+}
+.home_section_top_container.flex.flex-col.items-center.justify-center.gap-3.md\:gap-\[18px\].mb-6.md\:mb-10 {
+    PADDING-TOP: 40PX;
+}
+
+
+
+
+
 
 
 
@@ -288,46 +357,30 @@ svg.absolute.-z-10.bottom-0.left-0.w-full.h-auto.text-skin-primary\/50 {
 </script>
 <script>
 (function () {
-  // دالة التأكد من أننا في صفحة منتج
   function isProductPage() {
     return window.location.href.includes('/products/') || window.location.pathname.includes('/products/');
   }
-
-  // الدالة الأساسية لإنشاء الصور المصغرة
   function initThumbs() {
-    // 1. لو مش صفحة منتج، نوقف فوراً
     if (!isProductPage()) return false;
-
-    // 2. البحث عن السلايدر
     const swiperEl = document.querySelector('.swiper');
     if (!swiperEl) return false;
-
-    // 3. لو الصور المصغرة موجودة بالفعل، نوقف عشان ميعملش تكرار
     if (swiperEl.parentElement.querySelector('.product-thumbs') || document.querySelector('.product-thumbs')) return true;
-
     const wrapper = swiperEl.querySelector('.swiper-wrapper');
     const slides = swiperEl.querySelectorAll('.swiper-slide');
-
     if (!wrapper || slides.length === 0) return false;
-
     const imgs = Array.from(slides)
       .map(s => s.querySelector('img'))
       .filter(Boolean)
       .map(img => img.getAttribute('src'));
-
     if (imgs.length === 0) return false;
-
-    // 4. إنشاء العناصر (نفس اللوجيك القديم)
     const controlsRow = swiperEl.parentElement.querySelector('.mt-2.flex.items-center.justify-center.gap-2');
     const thumbs = document.createElement('div');
     thumbs.className = 'product-thumbs';
-
     imgs.forEach((src, i) => {
       const b = document.createElement('button');
       b.type = 'button';
       b.className = 'product-thumb';
       b.setAttribute('aria-label', `thumb-${i+1}`);
-
       const im = document.createElement('img');
       im.src = src;
       im.loading = 'lazy';
@@ -343,14 +396,10 @@ svg.absolute.-z-10.bottom-0.left-0.w-full.h-auto.text-skin-primary\/50 {
         }
         updateActiveState(thumbs, targetIndex);
       });
-
       thumbs.appendChild(b);
     });
-
     if (controlsRow) controlsRow.insertAdjacentElement('afterend', thumbs);
     else swiperEl.insertAdjacentElement('afterend', thumbs);
-
-    // تفعيل الحالة النشطة (Active)
     updateActiveState(thumbs, 0);
     const instance = swiperEl.swiper;
     if (instance && instance.on) {
@@ -358,29 +407,16 @@ svg.absolute.-z-10.bottom-0.left-0.w-full.h-auto.text-skin-primary\/50 {
         updateActiveState(thumbs, instance.realIndex ?? instance.activeIndex ?? 0);
       });
     }
-
-    return true; // تم التنفيذ بنجاح
+    return true;
   }
-
   function updateActiveState(container, activeIndex) {
     container.querySelectorAll('.product-thumb').forEach((el, idx) => {
       el.classList.toggle('is-active', idx === activeIndex);
     });
   }
-
-  // ============================================================
-  // الجزء الجديد: المراقب الذكي (The Smart Watcher)
-  // ============================================================
-  
-  // 1. محاولة التشغيل فوراً
   initThumbs();
-
-  // 2. مراقبة أي تغييرات في الصفحة (لو السلايدر اتأخر في التحميل)
   const observer = new MutationObserver((mutations) => {
-    // نتأكد الأول إننا في صفحة منتج عشان منضيعش موارد المتصفح
     if (isProductPage()) {
-       // لو الدالة رجعت true (يعني اشتغلت)، ممكن نوقف المراقب لو مش محتاجينه تاني
-       // بس هنسيبه شغال عشان لو غيرت الـ Variant (الألوان) والصور اتغيرت
        initThumbs();
     }
   });
@@ -389,16 +425,14 @@ svg.absolute.-z-10.bottom-0.left-0.w-full.h-auto.text-skin-primary\/50 {
     childList: true,
     subtree: true
   });
-
-  // 3. شبكة أمان: فحص كل ثانية لمدة 5 ثواني (في حالة المتصفحات البطيئة جداً)
   let attempts = 0;
   const intervalId = setInterval(() => {
     if (isProductPage()) {
         const success = initThumbs();
-        if (success) clearInterval(intervalId); // لو اشتغل خلاص وقف الفحص
+        if (success) clearInterval(intervalId); 
     }
     attempts++;
-    if (attempts > 10) clearInterval(intervalId); // وقف بعد 10 محاولات (5 ثواني)
+    if (attempts > 10) clearInterval(intervalId);
   }, 500);
 
 })();
