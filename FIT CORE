@@ -74,6 +74,7 @@ border-radius: 0.6rem !important;
 }
 button.flex.items-center.justify-center.gap-2.py-3.px-8.text-base.font-medium.transition-colors.duration-200.ease-in-out.focus\:outline-none.w-full.border.border-transparent.bg-skin-primary.hover\:bg-skin-primary.hover\:bg-opacity-80.active\:bg-opacity-90.text-white.\!py-2.md\:\!py-3.text-base.rounded-full {
     border-radius: 0.6rem !important;
+    order: 7 !important;
 }
 p.ms-4.flex.items-center.gap-0\.5 {
     DISPLAY: NONE;
@@ -353,12 +354,10 @@ FONT-SIZE: larger;
 .fake_visitors_container svg{
   display: none !important;
 }
-
 .fake_visitors_container{
   position: relative;
   padding-right: 44px !important; 
 }
-
 .fake_visitors_container::before{
   content: "";
   position: absolute;
@@ -373,8 +372,47 @@ FONT-SIZE: larger;
   background-size: contain;
 }
 img.transition-opacity.w-full.h-full.opacity-100.animate-zoom-fade.rounded-\[28px\].cursor-pointer.h-full.w-full {
-    HEIGHT: 370PX;
+    HEIGHT: 370PX;}
+div.md\:mt-4 {
+    display: flex !important;
+    flex-direction: column !important;
 }
+div.md\:mt-4 > a[href*="/collections/"] {
+    order: 1 !important;
+    margin-bottom: 7px !important; }
+div.md\:mt-4 > div.flex.items-center.gap-2.text-sm {
+    order: 1 !important;
+    display: flex !important;
+        flex-direction: row-reverse !important; 
+        justify-content: flex-end !important;   
+    
+    align-items: center !important;
+    margin-top: 0 !important;
+    margin-bottom: 8px !important;
+    width: 100% !important;}
+div.md\:mt-4 > h1 {
+    order: 3 !important;
+    margin-top: 0 !important;}
+div.md\:mt-4 > div.text-\[\#61758A\] {
+    order: 8 !important;}
+div.md\:mt-4 > div:not(.text-\[\#61758A\]):not(.gap-2) {
+    order: 5 !important;}
+a.mt-6.text-sm.md\:text-base.font-medium.flex.gap-2.md\:gap-3.items-center.hover\:opacity-90.transition-opacity.group {
+    order: 8; }
+button.flex.items-center.justify-center.gap-2.py-3.px-8.text-base.font-medium.transition-colors.duration-200.ease-in-out.focus\:outline-none.border.border-skin-primary.bg-white.hover\:bg-gray-50.active\:bg-gray-100.text-skin-primary.\!py-2.md\:\!py-3.text-base.rounded-full.w-full.font-bold.rounded-\[14px\].gap-2.px-1.disabled\:text-skin-primary\/50.disabled\:border-skin-primary\/50 {
+    border-radius: 0.6rem !important;
+}
+.flex.justify-center.items-center.gap-4.border.border-\[\#EBEBEB\].rounded-\[14px\].px-2 {
+    border-radius: 0.6rem !important;
+}
+div#headlessui-dialog-panel-\:r1\: {
+    border-radius: 0.6rem !important;
+}
+
+
+
+
+
 
 
 
