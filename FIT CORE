@@ -1,0 +1,405 @@
+<style>.border-t.bg-skin-primary {
+    display: none;
+}
+p.text-sm.text-\[\#010101\] {
+    margin-bottom: auto;
+}
+.flex.items-center.gap-7 {
+    display: none;
+}
+.mb-3\.5.md\:mb-5.flex.flex-col.md\:flex-row.gap-x-6.gap-y-3\.5 {
+    margin-bottom: auto;
+}
+section.saater-section.bg-white {
+    padding: initial;
+}
+
+p.text-sm.md\:text-base.text-\[\#61758A\] {
+    margin-bottom: initial;
+}
+.relative.flex.flex-col > .gap-x-6.gap-y-3\.5 {
+      display: contents !important;
+  }
+
+ .relative.flex.flex-col > .gap-x-6.gap-y-3\.5 {
+      display: contents !important;
+  }
+  .relative.flex.flex-col > a[href*="/collections/"] {
+      order: 1 !important;
+      margin-bottom: 10px !important;
+  }
+  .relative.flex.flex-col > .gap-x-6.gap-y-3\.5 > div:not(.fake_visitors_container) {
+      order: 2 !important;
+      width: 100% !important; 
+      margin-bottom: 10px !important;
+      display: flex !important; 
+  }
+
+  .product_name, 
+  .relative.flex.flex-col > .flex.items-start {
+      order: 3 !important;
+ font-size: 30px !important;
+    font-weight: bolder;
+padding-top: 5px;
+  }
+  .relative.flex.flex-col > p {
+      order: 4 !important;
+      margin-bottom: 15px !important;
+  }
+  .fake_visitors_container {
+      order: 5 !important;
+      margin-top: 5px !important;
+      margin-bottom: 20px !important;
+      width: fit-content !important; 
+border-radius: 0.6rem !important;
+  }
+.mt-4.md\:mt-6.p-6.md\:p-8.bg-\[\#F7F7FA\].rounded-\[28px\],
+.mt-4.md\:mt-6.p-6.md\:p-8.bg-\[\#F7F7FA\].rounded-\[28px\] *{
+  border-radius: 0.6rem !important;
+}
+
+.mt-4.md\:mt-6.p-6.md\:p-8.bg-\[\#F7F7FA\].rounded-\[28px\] .radio_container,
+.mt-4.md\:mt-6.p-6.md\:p-8.bg-\[\#F7F7FA\].rounded-\[28px\] .radio_circle{
+  border-radius: 9999px !important;
+}
+.mt-5.flex.flex-col.flex-col-reverse.gap-4 button{
+  border-radius: 0.6rem !important;
+}
+.mt-4.md\:mt-6.p-6.md\:p-8.bg-\[\#F7F7FA\].rounded-\[28px\] .absolute{
+  border-radius: initial !important;
+}
+.mt-4.md\:mt-6.p-6.md\:p-8.bg-\[\#F7F7FA\].rounded-\[28px\] .\!text-xs.absolute.-top-2.left-\[44\%\].md\:left-1\/3.-translate-x-1\/2,
+.mt-4.md\:mt-6.p-6.md\:p-8.bg-\[\#F7F7FA\].rounded-\[28px\] .\!text-xs.absolute.-top-2.left-\[44\%\].md\:left-1\/3.-translate-x-1\/2 *{
+  border-radius: initial !important;
+}
+.checkout_btn{
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+font-size: 22px !important;   
+  font-weight: 800 !important; 
+  letter-spacing: 0.2px;       
+  line-height: 1.1 !important;  
+}
+button:has(> p.whitespace-nowrap){
+      border-radius: 0.6rem !important;
+    margin-bottom: 3px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+}
+button:has(> p.whitespace-nowrap) > p.whitespace-nowrap{
+      font-size: 25px !important;
+    font-weight: 800 !important;
+    line-height: 1.1 !important;
+    margin-bottom: initial !important;
+    color: #fff;
+}
+button[aria-label="prev-button"] svg,
+button[aria-label="next-button"] svg{
+  display:none !important;
+}
+:root{
+  --arrow-color: #010101;
+  --arrow-size: 20px;
+}
+button[aria-label="prev-button"],
+button[aria-label="next-button"]{
+  width: 36px;
+  height: 36px;
+  background-color: #524c4c !important;
+  -webkit-mask-repeat: no-repeat !important;
+  -webkit-mask-position: center !important;
+  -webkit-mask-size: var(--arrow-size) var(--arrow-size) !important;
+  mask-repeat: no-repeat !important;
+  mask-position: center !important;
+  mask-size: var(--arrow-size) var(--arrow-size) !important;
+}
+button[aria-label="prev-button"]{
+   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 6l6 6-6 6' fill='black'/%3E%3C/svg%3E") !important;
+          mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 6l6 6-6 6' fill='black'/%3E%3C/svg%3E") !important;
+}
+
+button[aria-label="next-button"]{
+ -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M15 18l-6-6 6-6' fill='black'/%3E%3C/svg%3E") !important;
+          mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M15 18l-6-6 6-6' fill='black'/%3E%3C/svg%3E") !important;
+}
+.product-thumbs{
+  display:flex;
+  gap:10px;
+  overflow:auto;
+  scroll-snap-type:x mandatory;
+}
+.product-thumbs::-webkit-scrollbar{ height:6px; }
+.product-thumbs::-webkit-scrollbar-thumb{ background:#ddd; border-radius:10px; }
+.product-thumb{
+  width:64px;
+  height:64px;
+  border-radius:10px;
+  border:1px solid #E6E6E6;
+  overflow:hidden;
+  flex:0 0 auto;
+  scroll-snap-align:start;
+  background:#fff;
+  cursor:pointer;
+}
+.product-thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.product-thumb.is-active{
+  border-color:#010101;
+  box-shadow: 0 0 0 2px rgba(1,1,1,.10);
+}
+.mt-2.flex.items-center.justify-center.gap-2 {
+    display: none;
+}
+.mx-auto.max-w-2xl.py-12.px-2.sm\:py-16.sm\:px-6.lg\:max-w-7xl.lg\:px-5.xl\:px-8.relative.\!px-0.\!py-3\.5.lg\:\!py-9.lg\:\!max-w-\[1312px\] {
+    padding-top: 0px !important;
+}
+.eo-orders-widget{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  direction: rtl;
+  gap: 10px;
+  margin-top: 10px;
+}
+.eo-orders-avatars{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse; 
+}
+.eo-orders-avatars .eo-av{
+  width: 34px;
+  height: 34px;
+  border-radius: 9999px;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  margin-right: -10px; 
+  background: #eee;
+}
+.eo-orders-avatars .eo-av:first-child{
+  margin-right: 0;
+}
+.eo-orders-badge{
+  width: 18px;
+  height: 18px;
+  border-radius: 9999px;
+  background: #6d388b;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline-end: 6px;
+  flex: 0 0 auto;
+}
+.eo-orders-badge svg{
+  width: 12px;
+  height: 12px;
+  fill: #fff;
+}
+.eo-orders-pill{
+  background: #cdd2dd;
+  border-radius: 9999px;
+  padding: 8px 14px;
+  line-height: 1.05;
+  color: #121212;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.eo-orders-pill .eo-orders-strong{
+  font-weight: 800;
+  font-size: 14px;
+}
+.eo-orders-pill .eo-orders-sub{
+  font-size: 12px;
+  opacity: .9;
+}
+@media (max-width: 420px){
+  .eo-orders-avatars .eo-av{ width: 30px; height: 30px; margin-right: -9px; }
+  .eo-orders-pill{ padding: 7px 12px; }
+}
+svg.absolute.-z-10.bottom-0.left-0.w-full.h-auto.text-skin-primary\/50 {
+    DISPLAY: NONE;
+}
+.default_header a[href="/search"] svg,
+.default_header button[type="button"].bg-white svg,
+.default_header button.group svg{
+  display: none !important;
+}
+.default_header a[href="/search"],
+.default_header button[type="button"].bg-white,
+.default_header button.group{
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 22px 22px !important;
+}
+
+/* منيو */
+.default_header button[type="button"].bg-white{
+  background-image: url("https://img.icons8.com/ios-filled/50/menu--v6.png") !important;
+}
+
+/* بحث */
+.default_header a[href="/search"]{
+  background-image: url("https://img.icons8.com/ios-filled/50/search--v1.png") !important;
+}
+
+/* كارت */
+.default_header button.group{
+  background-image: url("https://img.icons8.com/parakeet-filled/48/shopping-cart.png") !important;
+}
+
+
+
+
+
+
+
+</style>
+<script>
+  function openInstaModal(element) {
+    var modal = document.getElementById("insta-modal");
+    var modalImg = document.getElementById("modal-img");
+    var img = element.querySelector('img');
+    
+    if (img && modal && modalImg) {
+      modal.style.display = "flex";
+      modalImg.src = img.src;     
+    }
+  }
+
+  function closeInstaModal(event) {
+    var modal = document.getElementById("insta-modal");
+    if (event.target.id === "insta-modal" || event.target.classList.contains("close-btn")) {
+      modal.style.display = "none";
+    }
+  }
+
+</script>
+<script>
+(function () {
+  // دالة التأكد من أننا في صفحة منتج
+  function isProductPage() {
+    return window.location.href.includes('/products/') || window.location.pathname.includes('/products/');
+  }
+
+  // الدالة الأساسية لإنشاء الصور المصغرة
+  function initThumbs() {
+    // 1. لو مش صفحة منتج، نوقف فوراً
+    if (!isProductPage()) return false;
+
+    // 2. البحث عن السلايدر
+    const swiperEl = document.querySelector('.swiper');
+    if (!swiperEl) return false;
+
+    // 3. لو الصور المصغرة موجودة بالفعل، نوقف عشان ميعملش تكرار
+    if (swiperEl.parentElement.querySelector('.product-thumbs') || document.querySelector('.product-thumbs')) return true;
+
+    const wrapper = swiperEl.querySelector('.swiper-wrapper');
+    const slides = swiperEl.querySelectorAll('.swiper-slide');
+
+    if (!wrapper || slides.length === 0) return false;
+
+    const imgs = Array.from(slides)
+      .map(s => s.querySelector('img'))
+      .filter(Boolean)
+      .map(img => img.getAttribute('src'));
+
+    if (imgs.length === 0) return false;
+
+    // 4. إنشاء العناصر (نفس اللوجيك القديم)
+    const controlsRow = swiperEl.parentElement.querySelector('.mt-2.flex.items-center.justify-center.gap-2');
+    const thumbs = document.createElement('div');
+    thumbs.className = 'product-thumbs';
+
+    imgs.forEach((src, i) => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'product-thumb';
+      b.setAttribute('aria-label', `thumb-${i+1}`);
+
+      const im = document.createElement('img');
+      im.src = src;
+      im.loading = 'lazy';
+      b.appendChild(im);
+
+      b.addEventListener('click', () => {
+        const targetIndex = i;
+        const instance = swiperEl.swiper;
+        if (instance && typeof instance.slideTo === 'function') {
+          instance.slideTo(targetIndex);
+        } else {
+          slides[targetIndex].scrollIntoView({behavior:'smooth', inline:'center', block:'nearest'});
+        }
+        updateActiveState(thumbs, targetIndex);
+      });
+
+      thumbs.appendChild(b);
+    });
+
+    if (controlsRow) controlsRow.insertAdjacentElement('afterend', thumbs);
+    else swiperEl.insertAdjacentElement('afterend', thumbs);
+
+    // تفعيل الحالة النشطة (Active)
+    updateActiveState(thumbs, 0);
+    const instance = swiperEl.swiper;
+    if (instance && instance.on) {
+      instance.on('slideChange', () => {
+        updateActiveState(thumbs, instance.realIndex ?? instance.activeIndex ?? 0);
+      });
+    }
+
+    return true; // تم التنفيذ بنجاح
+  }
+
+  function updateActiveState(container, activeIndex) {
+    container.querySelectorAll('.product-thumb').forEach((el, idx) => {
+      el.classList.toggle('is-active', idx === activeIndex);
+    });
+  }
+
+  // ============================================================
+  // الجزء الجديد: المراقب الذكي (The Smart Watcher)
+  // ============================================================
+  
+  // 1. محاولة التشغيل فوراً
+  initThumbs();
+
+  // 2. مراقبة أي تغييرات في الصفحة (لو السلايدر اتأخر في التحميل)
+  const observer = new MutationObserver((mutations) => {
+    // نتأكد الأول إننا في صفحة منتج عشان منضيعش موارد المتصفح
+    if (isProductPage()) {
+       // لو الدالة رجعت true (يعني اشتغلت)، ممكن نوقف المراقب لو مش محتاجينه تاني
+       // بس هنسيبه شغال عشان لو غيرت الـ Variant (الألوان) والصور اتغيرت
+       initThumbs();
+    }
+  });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+
+  // 3. شبكة أمان: فحص كل ثانية لمدة 5 ثواني (في حالة المتصفحات البطيئة جداً)
+  let attempts = 0;
+  const intervalId = setInterval(() => {
+    if (isProductPage()) {
+        const success = initThumbs();
+        if (success) clearInterval(intervalId); // لو اشتغل خلاص وقف الفحص
+    }
+    attempts++;
+    if (attempts > 10) clearInterval(intervalId); // وقف بعد 10 محاولات (5 ثواني)
+  }, 500);
+
+})();
+</script>
