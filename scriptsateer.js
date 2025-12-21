@@ -31,19 +31,22 @@ let i=typeof globalThis!=='undefined'?globalThis:typeof window!=='undefined'?win
   obs.observe(document.documentElement, {subtree:true, childList:true});
 })();
 
-button.border-skin-primary.bg-white.text-skin-primary.whitespace-nowrap::after {
-    content: "";
-    display: inline-block;
-    width: 20px;
-    height: 20px;
+document.addEventListener("DOMContentLoaded", function() {
+    var buttons = document.querySelectorAll('button');
     
-    background-image: url("https://img.icons8.com/ios/50/4A1C2A/discount--v1.png");
-    
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    vertical-align: middle;
-    margin-right: 8px;
-    position: relative;
-    top: -1px;
-}
+    buttons.forEach(function(btn) {
+        if (btn.textContent.trim().includes("أدخل الكوبون")) {
+            var icon = document.createElement("img");
+            icon.src = "https://img.icons8.com/ios/50/4A1C2A/discount--v1.png"; 
+            
+            icon.style.width = "20px";
+            icon.style.height = "20px";
+            icon.style.marginRight = "8px";
+          icon.style.objectFit = "contain";
+
+            btn.appendChild(icon);
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() { function cleanTotalText() { var prices = document.querySelectorAll('.text-gray-500.flex.items-center.gap-0\\.5'); prices.forEach(function(p) { p.childNodes.forEach(function(node) { if (node.nodeType === 3 && node.nodeValue.includes('الاجمالي')) { node.nodeValue = node.nodeValue.replace('الاجمالي', '').trim(); } }); }); } cleanTotalText(); const observer = new MutationObserver(function() { cleanTotalText(); }); observer.observe(document.body, { childList: true, subtree: true }); });
