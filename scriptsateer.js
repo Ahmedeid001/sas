@@ -30,3 +30,20 @@ let i=typeof globalThis!=='undefined'?globalThis:typeof window!=='undefined'?win
   const obs = new MutationObserver(addEyeButtons);
   obs.observe(document.documentElement, {subtree:true, childList:true});
 })();
+
+button.border-skin-primary.bg-white.text-skin-primary.whitespace-nowrap::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    
+    background-image: url("https://img.icons8.com/ios/50/4A1C2A/discount--v1.png");
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    margin-right: 8px;
+    position: relative;
+    top: -1px;
+}
