@@ -1,0 +1,214 @@
+<div class="full-width-breakout">
+    <h2 class="tab-section-title">What's new</h2>
+
+    <div class="tabs-navigation">
+        <button class="tab-btn active" onclick="openCategory(event, 'tab-rug')" 
+            data-id="4a8e9aff-534a-4951-96c9-2e133270a836">RUGS</button>
+        
+        <button class="tab-btn" onclick="openCategory(event, 'tab-cushion')" 
+            data-id="adaafc30-8e29-471c-a00d-c279337a31ed">CUSHIONS</button>
+        
+        <button class="tab-btn" onclick="openCategory(event, 'tab-bathmat')" 
+       
+       
+            data-id="79d77864-3e5a-40c1-ae92-d5dcd8fca7a5">BATH MATS</button>
+        
+        <button class="tab-btn" onclick="openCategory(event, 'tab-runner')" 
+            data-id="748651d3-df08-47ff-b2a6-7c996dc3b2ff">RUNNERS</button>
+    </div>
+
+    <div class="tabs-content-container">
+        <div id="tab-rug" class="tab-content" style="display: block;">
+            <div class="products-horizontal-row">
+                <div class="loading-spinner">جاري التحميل...</div>
+            </div>
+        </div>
+        <div id="tab-cushion" class="tab-content">
+            <div class="products-horizontal-row"></div>
+        </div>
+        <div id="tab-bathmat" class="tab-content">
+            <div class="products-horizontal-row"></div>
+        </div>
+        <div id="tab-runner" class="tab-content">
+            <div class="products-horizontal-row"></div>
+        </div>
+    </div>
+</div>
+<style>
+    /* ... (نفس التنسيقات الأساسية بدون تغيير) ... */
+    .loading-spinner {
+        width: 100%; text-align: center; padding: 40px; color: #888; font-weight: bold; font-family: inherit;
+    }
+    .full-width-breakout {
+        width: 100vw !important; position: relative !important; left: 50% !important; right: 50% !important;
+        margin-left: -50vw !important; margin-right: -50vw !important; background: #fff;
+        padding-top: 20px; padding-bottom: 40px; box-sizing: border-box !important;
+    }
+    .tab-section-title { text-align: center !important; font-size: 32px !important; font-weight: 700; margin: 15px 0 30px; color: #131316; }
+    
+    .tabs-navigation { 
+        display: flex; 
+        justify-content: center; 
+        gap: 20px; 
+        margin-bottom: 30px; 
+        border-bottom: 1px solid #eee; 
+        padding-bottom: 10px; 
+        flex-wrap: wrap; /* ده للديسك توب بس */
+    }
+    
+    .tab-btn { background: none; border: none; font-size: 16px; font-weight: 600; color: #888; cursor: pointer; padding: 10px 20px; transition: all 0.3s; border-bottom: 2px solid transparent; }
+    .tab-btn.active { color: #000; border-bottom-color: #000; }
+    
+    .tabs-content-container { width: 100%; }
+    .tab-content { display: none; animation: fadeUp 0.5s; }
+    
+    .products-horizontal-row { 
+        display: flex !important; overflow-x: auto !important; gap: 20px !important; 
+        padding: 10px 5% 30px 5%; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; 
+    }
+    .products-horizontal-row::-webkit-scrollbar { height: 0px; background: transparent; }
+    .products-horizontal-row { -ms-overflow-style: none; scrollbar-width: none; }
+    
+    .product-card-item { flex: 0 0 280px !important; max-width: 280px !important; border-radius: 14px; overflow: hidden; transition: transform 0.3s; }
+    .product-card-item:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+    
+    .img-holder { width: 100%; height: 350px !important; background: #f9f9f9; position: relative; border-radius: 8px;}
+    .img-holder img { width: 100%; height: 100% !important; object-fit: contain !important; }
+    
+    .card-details { padding: 15px;  }
+    .card-title { font-size: 16px; font-weight: 600; color: #333; margin-bottom: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; }
+    .card-price { font-size: 18px; font-weight: 700; color: #000; }
+
+    @media (max-width: 768px) {
+        /* تعديلات عرض الموبايل فقط */
+        .tabs-navigation {
+            flex-wrap: nowrap !important;       /* يمنع النزول لسطر جديد */
+            justify-content: flex-start !important; /* يبدأ من الشمال */
+            overflow-x: auto !important;        /* يسمح بالسكرول الجانبي */
+            padding-left: 15px;                 /* مسافة من الجنب */
+            padding-right: 15px;
+            gap: 10px !important;               /* تقليل المسافة بين الزراير شوية */
+            -webkit-overflow-scrolling: touch;  /* نعومة السكرول في الايفون */
+        }
+        
+        /* إخفاء شريط السكرول من التابات */
+        .tabs-navigation::-webkit-scrollbar { display: none; }
+        
+        .tab-btn {
+            font-size: 14px; 
+            padding: 8px 10px;
+            white-space: nowrap !important; /* يمنع الكلمة تتقسم */
+            flex: 0 0 auto; /* يمنع الزرار إنه يكش */
+        }
+
+        .product-card-item { flex: 0 0 180px !important; max-width: 180px !important; }
+        .img-holder { height: 240px !important; }
+    }
+    @keyframes fadeUp { from {opacity:0; transform:translateY(10px);} to {opacity:1; transform:translateY(0);} }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+const API_KEY = "705af426-ebaa-4dbc-a733-0b6bc785fd31";
+
+function openCategory(evt, categoryName) {
+    var tabcontent = document.getElementsByClassName("tab-content");
+    for (var i = 0; i < tabcontent.length; i++) tabcontent[i].style.display = "none";
+    var tablinks = document.getElementsByClassName("tab-btn");
+    for (var i = 0; i < tablinks.length; i++) tablinks[i].classList.remove("active");
+    document.getElementById(categoryName).style.display = "block";
+    evt.currentTarget.classList.add("active");
+
+    const collectionId = evt.currentTarget.getAttribute('data-id');
+    const container = document.querySelector(`#${categoryName} .products-horizontal-row`);
+
+    if (collectionId && (container.innerHTML.trim() === "" || container.querySelector('.loading-spinner'))) {
+        fetchProductsHybrid(collectionId, container);
+    }
+}
+
+async function fetchProductsHybrid(id, container) {
+    container.innerHTML = '<div class="loading-spinner">جاري التحميل...</div>';
+    
+    // الطريقة الأولى: الرابط الداخلي المباشر
+    let url = `/api/v1/products?category_id=${id}`;
+    let headers = { 'Content-Type': 'application/json' };
+
+    try {
+        console.log(`Trying Internal API: ${url}`);
+        let response = await fetch(url, { headers });
+        if (!response.ok) {
+            console.warn("Internal API failed, switching to Public API...");
+            url = `https://api.easy-orders.net/api/v1/external-apps/products?category_id=${id}`;
+            url = `https://corsproxy.io/?${encodeURIComponent(url)}`;
+            headers['Api-Key'] = API_KEY;
+            
+            response = await fetch(url, { headers });
+        }
+
+        if (!response.ok) throw new Error(`Error ${response.status}: ${response.statusText}`);
+
+        const json = await response.json();
+        const products = Array.isArray(json) ? json : (json.data || json.products || []);
+
+        if (products.length > 0) {
+            let html = '';
+            products.slice(0, 8).forEach(p => {
+                const title = p.name || p.title || p.name_en || "منتج";
+                let rawPrice = p.price || p.sale_price || p.price_min || 0;
+                const price = Math.floor(Number(rawPrice));
+                                let img = "https://via.placeholder.com/300?text=No+Image";
+                if (p.thumb) img = p.thumb;
+                else if (p.image) img = p.image;
+                else if (p.images && p.images.length > 0) img = p.images[0].url || p.images[0];
+                else if (p.cover) img = p.cover;
+                if (img && !img.startsWith('http') && !img.startsWith('//')) {
+                    img = `https://files.easy-orders.net/${img.replace(/^\//, '')}`;
+                }
+                const slug = p.slug || p.id;
+                const link = `/products/${slug}`;
+
+                html += `
+                <div class="product-card-item">
+                    <div class="animate-slideIn" style="opacity: 1;">
+                        <a href="${link}" class="block w-full h-full cursor-pointer">
+                            <div class="group box-border flex flex-col items-start bg-white relative h-full">
+                                <div class="img-holder">
+                                    <img src="${img}" loading="lazy" alt="${title}">
+                                </div>
+                                <div class="card-details w-full">
+                                    <h3 class="card-title">${title}</h3>
+                                    <div class="card-price">${price} EGP</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>`;
+            });
+            container.innerHTML = html;
+        } else {
+            container.innerHTML = '<p style="padding:20px; text-align:center;">لا توجد منتجات.</p>';
+        }
+
+    } catch (error) {
+        console.error("Fetch Error:", error);
+        container.innerHTML = `<p style="padding:20px; text-align:center; color:red;">خطأ: ${error.message}</p>`;
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    const firstTabBtn = document.querySelector('.tab-btn.active');
+    if(firstTabBtn) firstTabBtn.click();
+});
+</script>
