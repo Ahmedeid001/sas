@@ -231,21 +231,16 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 })();
-(function heroSliderInit() {
-
+document.addEventListener("DOMContentLoaded", function() {
+    let currentSlideIndex = 0;
     const slides = document.querySelectorAll('.hero-slide');
     const dots = document.querySelectorAll('.dot');
-
-     if (!slides.length || !dots.length) {
-        setTimeout(heroSliderInit, 300);
-        return;
-    }
-
-    let currentSlideIndex = 0;
     const totalSlides = slides.length;
     let autoPlayInterval;
 
     function showSlide(index) {
+        if (slides.length === 0) return;
+
         slides.forEach(slide => slide.classList.remove('active'));
         dots.forEach(dot => dot.classList.remove('active'));
 
@@ -277,7 +272,9 @@ document.addEventListener("DOMContentLoaded", function() {
         clearInterval(autoPlayInterval);
         startAutoPlay();
     }
-    showSlide(0);
-    startAutoPlay();
 
-})();
+    if(totalSlides > 0) {
+        startAutoPlay();
+    }
+});
+
