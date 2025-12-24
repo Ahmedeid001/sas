@@ -231,6 +231,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 })();
+ 
 document.addEventListener("DOMContentLoaded", function() {
     let currentSlideIndex = 0;
     const slides = document.querySelectorAll('.hero-slide');
@@ -277,4 +278,3 @@ document.addEventListener("DOMContentLoaded", function() {
         startAutoPlay();
     }
 });
-
