@@ -491,8 +491,8 @@ div[role="radiogroup"] div[role="none"] {
     gap: 12px !important; 
 }
 div[role="radio"] {
-    width: 50px !important;        
-    height: 50px !important;       
+    width: 40px !important;        
+    height: 40px !important;       
     padding: 0 !important;        
     display: flex !important;
     align-items: center !important;
