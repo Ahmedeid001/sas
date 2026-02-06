@@ -487,7 +487,7 @@ span.bg-\[\#C4301C\] {
 h3.text-heading.md\:text-\[22px\].mt-2.md\:mt-3\.5.text-center {
     font-size: 18px;
 }
-.group.box-border.flex.overflow-hidden.rounded-\[14px\].transform.flex-col.items-start.bg-white.pb-4.transition.duration-200.ease-in-out.hover\:-translate-y-1.hover\:shadow-product.hover\:md\:-translate-y-1\.5.relative {
+.group.box-border.flex.overflow-hidden.rounded-\[14px\].transform.flex-col.items-start.bg-white.pb-4.transition.duration-200.ease-in-out.hover\:-translate-y-1.hover\:shadow-product.hover\:md\:-translate-y-1\.5.relative,div#headlessui-tabs-panel-\:r2\: {
     background: transparent;
     box-shadow: none;
 }
