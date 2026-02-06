@@ -456,8 +456,8 @@ nav.default_header_container.bg-white.w-full.max-w-7xl.mx-auto.px-2.lg\:px-8,but
 div[role="radio"] {
     border-radius: 3px !important;
 }
-button.flex.items-center.justify-center.gap-2.py-3.px-8.text-base.font-medium.transition-colors.duration-200.ease-in-out.focus\:outline-none.w-full.border.border-skin-primary.bg-white.hover\:bg-gray-50.active\:bg-gray-100.text-skin-primary.\!py-2.md\:\!py-3.text-base.rounded-full.add_to_cart_btn.\!font-bold {
-    border-radius: 3px;
+button.flex.items-center.justify-center.gap-2.py-3.px-8.text-base.font-medium.transition-colors.duration-200.ease-in-out.focus\:outline-none.w-full.border.border-skin-primary.bg-white.hover\:bg-gray-50.active\:bg-gray-100.text-skin-primary.\!py-2.md\:\!py-3.text-base.rounded-full.add_to_cart_btn.\!font-bold,div#headlessui-tabs-panel-\:rd\: {
+    border-radius: 3px;background: transparent;
 }
 span, strong, a, h1, h2, h3, h4, h5, h6, p, li, button, label, input, textarea, dd, dt {
     font-family: 'Times New Roman', serif !important;
