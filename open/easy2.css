@@ -116,7 +116,7 @@ p.text-sm.md\:text-xl.text-\[\#61758A\].line-through.flex.items-center.gap-0\.5 
  body {
     overflow-x: hidden !important;
 }
-h3,span,a {
+h3,a {
    font-weight: 500;
 }
 
