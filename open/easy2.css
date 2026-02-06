@@ -162,7 +162,7 @@ span.flex.items-center.gap-1.text-\[\#131316\] {
 }
 del.font-thin.text-gray-600.text-base.flex.items-center.gap-1.ms-2 {
     margin-bottom: -5px;
-    opacity: 0.5; font-weight: 100;     text-decoration-color: #0000009e;
+    opacity: 0.7; font-weight: 100;     text-decoration-color: #0000009e;
 }
 span.absolute.top-3.left-3.p-2.md\:px-4.md\:py-2.bg-\[\#C4301C\].text-white.font-bold.text-xs.md\:text-sm.rounded-full {
     top: auto;
