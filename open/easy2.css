@@ -190,7 +190,7 @@ span.absolute.top-3.left-3.p-2.md\:px-4.md\:py-2.bg-\[\#C4301C\].text-white.font
     display: none !important;
 }
 .default_header {
-    transition: opacity 0.2s ease, transform 0.2s ease;
+    transition: opacity 0.2s ease, transform 0.2s ease;background: #F4F5F7;
 }
 
 
