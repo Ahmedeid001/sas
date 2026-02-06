@@ -487,6 +487,10 @@ span.bg-\[\#C4301C\] {
 h3.text-heading.md\:text-\[22px\].mt-2.md\:mt-3\.5.text-center {
     font-size: 18px;
 }
+.group.box-border.flex.overflow-hidden.rounded-\[14px\].transform.flex-col.items-start.bg-white.pb-4.transition.duration-200.ease-in-out.hover\:-translate-y-1.hover\:shadow-product.hover\:md\:-translate-y-1\.5.relative {
+    background: transparent;
+    box-shadow: none;
+}
 div[role="radiogroup"] div[role="none"] {
     gap: 12px !important; 
 }
@@ -562,6 +566,6 @@ div.animate-slideIn.border-2.border-\[\#E2E2E2\] {
     padding: 5px;
 }button.font-medium.ms-2 {
     padding-right: 16px;
-}.flex.items-center.gap-x-1.text-skin-primary,p#price,span.font-\[inherit\] {
+}.flex.items-center.gap-x-1.text-skin-primary,p#price {
     color: #ee0a45;
 }
