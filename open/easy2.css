@@ -369,7 +369,7 @@ filter: opacity(0.7);
           }
        .default_header button[type="button"].bg-white {
     background-image: url("data:image/svg+xml,%3Csvg class='Icon Icon--nav' role='presentation' viewBox='0 0 20 14' width='20' height='14' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 14v-1h20v1H0zm0-7.5h20v1H0v-1zM0 0h20v1H0V0z' fill='currentColor'/%3E%3C/svg%3E") !important;
-    background-size: 28px 28px !important;
+    background-size: 25px !important;
     background: transparent;
 }
       
