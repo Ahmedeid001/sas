@@ -386,7 +386,10 @@ filter: opacity(0.7);
           background-color: transparent !important;
           opacity: 0.7;
       }
-      
+      .absolute.flex.items-center.justify-center.-top-\[2px\].-right-\[2px\].text-\[10px\].font-medium.bg-skin-primary.text-skin-a11y.h-\[18\.8px\].w-\[18\.8px\].rounded-full {
+    top: 45%;
+    right: 55%;
+}
        div:not(.default_header) button svg {
           display: block !important; 
       }
