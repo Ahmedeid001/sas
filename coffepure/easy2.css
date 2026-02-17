@@ -550,7 +550,7 @@ span.text-sm.md\:text-lg.font-bold.text-skin-primary,svg.absolute.-z-10.bottom-0
     top: auto;
     left: 0px;
 }h3.text-heading.md\:text-\[22px\].mt-2.md\:mt-3\.5.text-center,.flex.items-center.justify-center.text-heading.mt-3\.5.font-bold.text-xl.md\:text-2xl {
-    text-align: right;    justify-content: flex-start;    margin-top: 10px;
+    text-align: center;    justify-content: flex-start;    margin-top: 10px;
 
 }/* body,
 main,
