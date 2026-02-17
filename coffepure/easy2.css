@@ -1,7 +1,9 @@
 p.text-sm.md\:mb-5,svg.inline-block.ms-2.transition-all.duration-200.ease-in-out.w-5.h-5.group-hover\:w-6 {
   display: none;
 }
- 
+ .flex.justify-center.items-center.gap-3.border.rounded-full.px-2.py-2\.5.md\:py-3.me-2 {
+    border: none;
+}
 footer.bg-white.bg-skin-primary,
 footer[class*="skin-primary"] {
     display: none !important;
