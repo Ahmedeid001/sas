@@ -568,10 +568,14 @@ header.default_header.relative.bg-white.text-\[\#131316\].transition-all.duratio
     height: 55px;
     border-radius: 5px;background: #f71735ed;
 }button.flex.items-center.justify-center.gap-2.py-3.px-8.text-base.font-medium.transition-colors.duration-200.ease-in-out.focus\:outline-none.w-full.border.border-skin-primary.bg-white.hover\:bg-gray-50.active\:bg-gray-100.text-skin-primary.\!py-2.md\:\!py-3.text-base.rounded-full.add_to_cart_btn.\!font-bold {border-radius: 5px;color: #f71735ed;
-    border: 1px solid;}
-
+    border: 1px solid;    background: transparent;
     display: flex;
     flex-direction: column;
+}button.bg-gray-50.mx-2.rounded-md.active\:bg-gray-200.hover\:bg-gray-100.text-\[\#09090B\].disabled\:text-\[\#61758A\] {
+    background: transparent;
+}
+div[role="tabpanel"].bg-white {
+    background-color: transparent !important;
 }
 
  .animate-slideIn .mb-3\.5.md\:mb-5 {
