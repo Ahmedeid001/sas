@@ -1,0 +1,189 @@
+(function () {
+    function setupBibFooter() {
+        var footers = document.querySelectorAll('#bib-bento-footer');
+                if (footers.length === 0) return;
+        if (footers.length > 1) {
+            for (var j = 1; j < footers.length; j++) {
+                footers[j].parentNode.removeChild(footers[j]);
+            }
+        }
+        var footer = footers[0]; 
+        var oldFooters = document.querySelectorAll('footer:not(#bib-bento-footer)');
+        oldFooters.forEach(function(el) {
+            el.style.display = 'none';
+        });
+        if (footer.parentNode !== document.body || footer.nextSibling !== null) {
+            document.body.appendChild(footer);
+        }
+        requestAnimationFrame(function () {
+            footer.classList.add('is-ready');
+        });
+    }
+
+    if (document.readyState === 'complete') {
+        setupBibFooter();
+    } else {
+        window.addEventListener('load', setupBibFooter);
+    }
+    setTimeout(setupBibFooter, 500);
+    setTimeout(setupBibFooter, 2000);
+})();
+ 
+(function () {
+    var CONFIG = {
+        btnText: 'فعل اشتراكك 🚀',
+        pricePrefix: 'LE ',
+        debounceMs: 300
+    };
+    function initProductButtons() {
+        var cards = document.querySelectorAll('.group.box-border');
+
+        for (var i = 0; i < cards.length; i++) {
+            var card = cards[i];
+            if (card.querySelector('.product_card_add_btn')) continue;
+
+            var titleEl = card.querySelector('h3.text-heading');
+            var oldBtn = card.querySelector('button[aria-label="Add to cart"]');
+
+            if (!titleEl || !oldBtn) continue;
+
+            var newBtn = document.createElement('button');
+            newBtn.className = 'product_card_add_btn';
+            newBtn.textContent = CONFIG.btnText;
+            (function (ob) {
+                newBtn.onclick = function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    ob.click();
+                };
+            })(oldBtn);
+
+            titleEl.before(newBtn);
+        }
+    }
+    function formatPrice(el) {
+        if (!el || el.dataset.formatted) return;
+
+        var raw = el.innerText.replace(/[^0-9.]/g, '');
+        var num = parseFloat(raw);
+
+        if (isNaN(num)) return;
+
+        var formatted = num.toLocaleString('en-US', {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2
+        });
+
+        el.innerHTML = CONFIG.pricePrefix + formatted;
+        el.style.direction = 'rtl';
+        el.style.fontFamily = 'sans-serif';
+        el.dataset.formatted = 'true';
+    }
+
+    function formatAllPrices() {
+        var selectors = [
+            '#price',
+            '#sale-price',
+            '.product_price',
+            'del',
+            'p.line-through',
+            '.flex.items-center.gap-1.text-\\[\\#131316\\]',
+            'p.text-xl.font-bold.text-\\[\\#010101\\].flex.items-center.gap-1'
+        ].join(',');
+
+        var prices = document.querySelectorAll(selectors);
+
+        for (var i = 0; i < prices.length; i++) {
+            formatPrice(prices[i]);
+        }
+    }
+    function runAll() {
+        initProductButtons();
+        formatAllPrices();
+    }
+    var timer = null;
+
+    function debouncedRun() {
+        if (timer) return; 
+        timer = setTimeout(function () {
+            timer = null;
+            runAll();
+        }, CONFIG.debounceMs);
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', runAll);
+    } else {
+        runAll();
+    }
+    var observer = new MutationObserver(debouncedRun);
+
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+
+})();
+ 
+(function () {
+  let tries = 0;
+  const MAX_TRIES = 30;
+
+  function initBibIconsCarousel() {
+    const region = document.getElementById('bib-icons-slider');
+    const dots = document.querySelectorAll('.bib-dots button');
+
+    if (!region || dots.length === 0) return false;
+
+    function itemWidth() {
+      const first = region.querySelector('.bib-item');
+      return first ? first.getBoundingClientRect().width : region.clientWidth;
+    }
+
+    function setDot(i) {
+      dots.forEach((d, idx) =>
+        d.setAttribute('aria-current', String(idx === i))
+      );
+    }
+
+    function scrollToIndex(i) {
+      const w = itemWidth();
+      region.scrollTo({
+        left: -Math.round(i * w),
+        behavior: 'smooth'
+      });
+      setDot(i);
+    }
+
+    dots.forEach((d, i) =>
+      d.addEventListener('click', () => scrollToIndex(i))
+    );
+
+    let ticking = false;
+    region.addEventListener(
+      'scroll',
+      () => {
+        if (window.innerWidth > 992) return;
+        if (ticking) return;
+
+        ticking = true;
+        requestAnimationFrame(() => {
+          const w = itemWidth();
+          const i = Math.round(Math.abs(region.scrollLeft) / w);
+          setDot(Math.max(0, Math.min(i, dots.length - 1)));
+          ticking = false;
+        });
+      },
+      { passive: true }
+    );
+
+    return true;
+  }
+
+  const interval = setInterval(() => {
+    tries++;
+    if (initBibIconsCarousel() || tries > MAX_TRIES) {
+      clearInterval(interval);
+    }
+  }, 300);
+})();
+ 
