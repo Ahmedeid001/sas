@@ -187,3 +187,75 @@
   }, 300);
 })();
  
+ (function() {
+     function initOrlineCarousel() {
+        var track = document.getElementById('review-track');
+        var nextBtn = document.querySelector('.carousel-arrow.next');
+        var prevBtn = document.querySelector('.carousel-arrow.prev');
+
+         if (!track || !nextBtn || !prevBtn || track.dataset.initialized) {
+            return false;
+        }
+
+         track.dataset.initialized = 'true';
+
+        function getScrollAmount() {
+            var card = track.querySelector('.carousel-card');
+            // Card width + gap (20px)
+            return card ? card.offsetWidth + 20 : 280; 
+        }
+
+         nextBtn.addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent any default button behavior
+             track.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+        });
+
+        prevBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+             // Positive left scroll moves it "backward" visually in RTL
+            track.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+        });
+
+        return true;
+    }
+    initOrlineCarousel();
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initOrlineCarousel);
+    }
+    var attempts = 0;
+    var maxAttempts = 20; // Try for 10 seconds total
+    var pollingTimer = setInterval(function() {
+        if (initOrlineCarousel() || attempts >= maxAttempts) {
+            clearInterval(pollingTimer);
+        }
+        attempts++;
+    }, 500);
+    var observer = new MutationObserver(function(mutations) {
+        var track = document.getElementById('review-track');
+        if (track && !track.dataset.initialized) {
+           initOrlineCarousel();
+        }
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+
+})();
+ (function() {
+    var minDisplayTime = 800; 
+    var loadStartTime = Date.now();
+
+    function dismissLoader() {
+        var loader = document.getElementById('bib-creative-loader');
+        if (loader) {
+            loader.classList.add('fade-out');
+                        setTimeout(function() {
+                loader.remove();
+            }, 450);
+        }
+    }
+    window.addEventListener('load', function() {
+        var timePassed = Date.now() - loadStartTime;
+        var timeRemaining = Math.max(0, minDisplayTime - timePassed);
+        setTimeout(dismissLoader, timeRemaining);
+    });
+    setTimeout(dismissLoader, 3000);
+})();
