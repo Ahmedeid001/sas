@@ -425,14 +425,19 @@ h3.text-heading.md\:text-\[22px\].mt-2.md\:mt-3\.5.text-center {
         grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
-    .home_slider_container .swiper-wrapper {
-        justify-content: center !important; 
+    .home_slider_container .swiper-slide {
+        height: auto !important; 
+    }
+    
+    .home_slider_container .swiper-slide > div {
+        width: 100% !important;
+        height: 100% !important;
     }
 
-    .home_slider_container .swiper-slide {
-        display: flex !important;
-        justify-content: center !important;
-        height: auto !important; 
+    .home_slider_container .swiper-slide .group.box-border {
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 auto;
     }
 
     button.absolute.top-2.left-4.z-10.block.md\:hidden.bg-\[\#F2F2F2\].rounded-full.p-3\.5.hover\:bg-gray-100 {
