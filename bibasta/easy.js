@@ -120,23 +120,24 @@
         }
 
         function formatAllPrices() {
-            var selectors = [
-                '#price',
-                '#sale-price',
-                'p#sale-price',
-                '.product_price',
-                'del',
-                'p.line-through',
-                '.flex.items-center.gap-1.text-\\[\\#131316\\]',
-                'p.text-xl.font-bold.text-\\[\\#010101\\].flex.items-center.gap-1',
-                '.flex.items-center.gap-1.text-xl.md\\:text-\\[32px\\].font-bold.text-\\[\\#010101\\]'
-            ].join(',');
+    var selectors = [
+        '#price',
+        '#sale-price',
+        'p#sale-price',
+        '.product_price',
+        'del',
+        'p.line-through',
+        '.flex.items-center.gap-1.text-\\[\\#131316\\]',
+        'p.text-xl.font-bold.text-\\[\\#010101\\].flex.items-center.gap-1',
+        '.flex.items-center.gap-1.text-xl.md\\:text-\\[32px\\].font-bold.text-\\[\\#010101\\]',
+        '.text-2xl.md\\:text-\\[32px\\].font-bold' // تم إضافة هذا الكلاس هنا
+    ].join(',');
 
-            var prices = document.querySelectorAll(selectors);
-            for (var i = 0; i < prices.length; i++) {
-                formatPrice(prices[i]);
-            }
-        }
+    var prices = document.querySelectorAll(selectors);
+    for (var i = 0; i < prices.length; i++) {
+        formatPrice(prices[i]);
+    }
+}
 
         function runAll() {
             initProductButtons();
