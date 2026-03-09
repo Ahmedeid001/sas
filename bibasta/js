@@ -31,7 +31,7 @@
  
 (function () {
     var CONFIG = {
-        btnText: 'فعل اشتراكك 🚀',
+        btnText: 'فعل اشتراكك',
         pricePrefix: 'LE ',
         debounceMs: 300
     };
@@ -84,11 +84,13 @@
         var selectors = [
             '#price',
             '#sale-price',
+            'p#sale-price', // تم إضافة هذا
             '.product_price',
             'del',
             'p.line-through',
             '.flex.items-center.gap-1.text-\\[\\#131316\\]',
-            'p.text-xl.font-bold.text-\\[\\#010101\\].flex.items-center.gap-1'
+            'p.text-xl.font-bold.text-\\[\\#010101\\].flex.items-center.gap-1',
+            '.flex.items-center.gap-1.text-xl.md\\:text-\\[32px\\].font-bold.text-\\[\\#010101\\]' // تم إضافة هذا مع معالجة الرموز
         ].join(',');
 
         var prices = document.querySelectorAll(selectors);
@@ -123,7 +125,7 @@
     });
 
 })();
- 
+  
 (function () {
     function setupBibFooter() {
         var footers = document.querySelectorAll('#bib-bento-footer');
