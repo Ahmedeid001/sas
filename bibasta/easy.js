@@ -69,7 +69,7 @@
     /* ─── 3. Product Cards (Buttons + Price Formatting) ─── */
     (function () {
         var CONFIG = {
-            btnText: 'فعل اشتراكك 🚀',
+            btnText: 'فعل اشتراكك',
             pricePrefix: 'LE ',
             debounceMs: 300
         };
