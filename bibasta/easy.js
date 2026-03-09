@@ -102,11 +102,14 @@
         }
 
         function formatPrice(el) {
-            if (!el || el.dataset.formatted) return;
+            if (!el) return;
 
             var raw = el.innerText.replace(/[^0-9.]/g, '');
             var num = parseFloat(raw);
             if (isNaN(num)) return;
+
+            // لو السعر نفسه مش اتغير، ما تعملش حاجة
+            if (el.dataset.formatted && el.dataset.lastValue === raw) return;
 
             var formatted = num.toLocaleString('en-US', {
                 minimumFractionDigits: 2,
@@ -117,31 +120,57 @@
             el.style.direction = 'rtl';
             el.style.fontFamily = 'sans-serif';
             el.dataset.formatted = 'true';
+            el.dataset.lastValue = raw; // نحفظ القيمة عشان نقارن بعدين
         }
 
         function formatAllPrices() {
-    var selectors = [
-        '#price',
-        '#sale-price',
-        'p#sale-price',
-        '.product_price',
-        'del',
-        'p.line-through',
-        '.flex.items-center.gap-1.text-\\[\\#131316\\]',
-        'p.text-xl.font-bold.text-\\[\\#010101\\].flex.items-center.gap-1',
-        '.flex.items-center.gap-1.text-xl.md\\:text-\\[32px\\].font-bold.text-\\[\\#010101\\]',
-        '.text-2xl.md\\:text-\\[32px\\].font-bold' // تم إضافة هذا الكلاس هنا
-    ].join(',');
+            var selectors = [
+                '#price',
+                '#sale-price',
+                'p#sale-price',
+                '.product_price',
+                'del',
+                'p.line-through',
+                '.flex.items-center.gap-1.text-\\[\\#131316\\]',
+                'p.text-xl.font-bold.text-\\[\\#010101\\].flex.items-center.gap-1',
+                '.flex.items-center.gap-1.text-xl.md\\:text-\\[32px\\].font-bold.text-\\[\\#010101\\]',
+                '.text-2xl.md\\:text-\\[32px\\].font-bold'
+            ].join(',');
 
-    var prices = document.querySelectorAll(selectors);
-    for (var i = 0; i < prices.length; i++) {
-        formatPrice(prices[i]);
-    }
-}
+            var prices = document.querySelectorAll(selectors);
+            for (var i = 0; i < prices.length; i++) {
+                formatPrice(prices[i]);
+            }
+        }
+
+        /* ─── مراقب تغيير السعر (Variant Change Watcher) ─── */
+        function watchPriceChanges() {
+            var targets = document.querySelectorAll('#sale-price, #price, p.line-through, del');
+
+            targets.forEach(function (el) {
+                if (el.dataset.watched) return;
+                el.dataset.watched = 'true';
+
+                new MutationObserver(function () {
+                    // المنصة غيرت المحتوى — نشيل العلامة القديمة ونعيد التنسيق
+                    var currentRaw = el.innerText.replace(/[^0-9.]/g, '');
+                    if (currentRaw !== el.dataset.lastValue) {
+                        el.dataset.formatted = '';
+                        el.dataset.lastValue = '';
+                        formatPrice(el);
+                    }
+                }).observe(el, {
+                    childList: true,
+                    subtree: true,
+                    characterData: true
+                });
+            });
+        }
 
         function runAll() {
             initProductButtons();
             formatAllPrices();
+            watchPriceChanges();
         }
 
         var timer = null;
