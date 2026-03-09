@@ -1,0 +1,553 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+/* ================================================================
+   FOXY — Master Script (دمج فقط — بدون تعديل لوجيك)
+   ================================================================ */
+
+// ========================================================
+// 1. FAQ Accordion
+// ========================================================
+(function() {
+  document.addEventListener('click', function(e) {
+    var btn = e.target.closest('.faq-question');
+    if (!btn) return;
+    e.preventDefault();
+    btn.classList.toggle('active');
+    var panel = btn.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+})();
+
+// ========================================================
+// 2. Announcement Bar + Countdown Timer
+// ========================================================
+(function() {
+    var valentineBar = '<div class="announcement-section-1">'
+      + '<div class="container"><div class="announcement-wrapper">'
+      + '<span class="clock-down_text">\u2764\uFE0F EID SALE ENDS IN \u2764\uFE0F</span>'
+      + '<div id="js-clock" class="holiday-clock">'
+      + '<div class="box-3"><div id="js-clock-hours" class="clock-number-2">11</div><div class="clock-label-2">Hrs</div></div>'
+      + '<div class="text-block-countdown">:</div>'
+      + '<div class="box-3"><div id="js-clock-minutes" class="clock-number-2">06</div><div class="clock-label-2">Min</div></div>'
+      + '<div class="text-block-countdown">:</div>'
+      + '<div class="box-3"><div id="js-clock-seconds" class="clock-number-2">22</div><div class="clock-label-2">Sec</div></div>'
+      + '</div></div></div></div>';
+
+    var limitedTimeBar = '<div class="old-announcement-wrapper">LIMITED TIME: SAVE UP TO 70%</div>';
+
+    var mainWrapper = document.createElement('div');
+    mainWrapper.id = 'mega-sticky-header';
+    mainWrapper.innerHTML = valentineBar + limitedTimeBar;
+
+    var style = document.createElement('style');
+    style.innerHTML = ''
+      + '#mega-sticky-header{position:fixed;top:0;left:0;width:100%;z-index:40;box-shadow:0 2px 10px rgba(0,0,0,.1);direction:ltr}'
+      + '.announcement-section-1{background:linear-gradient(45deg,#3D348B,#3D348B,#9E388B,#DF4F79,#DF4F79);background-size:400% 400%;animation:primaryGradient 5s ease infinite;color:#fff;padding:5px 0;justify-items:center}'
+      + '.announcement-section-1 .announcement-wrapper{display:flex;justify-content:center;align-items:center;gap:10px;font-weight:700;font-size:16px;flex-wrap:wrap}'
+      + '.holiday-clock{display:flex;align-items:center;color:#2a2552;flex-direction:row}'
+      + '.box-3{background-color:#fff;border-radius:4px;display:flex;flex-direction:column;justify-content:center;align-items:center;width:35px;height:35px;margin:0 2px;line-height:1}'
+      + '.clock-number-2{font-size:14px;font-weight:900}'
+      + '.clock-label-2{font-size:8px;text-transform:uppercase}'
+      + '.text-block-countdown{color:#fff;font-weight:800;padding:0 2px}'
+      + '.old-announcement-wrapper{background:#d6d2ff;color:#2e2a39;font-size:18px;font-weight:700;text-align:center;padding:10px 0}'
+      + '@keyframes primaryGradient{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}'
+      + '@media(max-width:740px){'
+      + '.announcement-section-1 .announcement-wrapper{font-size:12px;gap:5px;direction:ltr}'
+      + '.old-announcement-wrapper{font-size:14px;padding:8px 0}'
+      + '.box-3{width:30px;height:30px}.clock-number-2{font-size:12px}.clock-label-2{font-size:7px}}';
+
+    document.head.appendChild(style);
+    document.body.prepend(mainWrapper);
+
+    function startTimer(duration, displayHours, displayMinutes, displaySeconds) {
+        var timer = duration, hours, minutes, seconds;
+        setInterval(function () {
+            hours = parseInt(timer / 3600, 10);
+            minutes = parseInt((timer % 3600) / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+            hours = hours < 10 ? "0" + hours : hours;
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+            if(displayHours) displayHours.textContent = hours;
+            if(displayMinutes) displayMinutes.textContent = minutes;
+            if(displaySeconds) displaySeconds.textContent = seconds;
+            if (--timer < 0) { timer = duration; }
+        }, 1000);
+    }
+    var timeInSeconds = (8 * 60 * 60) + (24 * 60) + 22;
+    startTimer(timeInSeconds,
+        document.getElementById('js-clock-hours'),
+        document.getElementById('js-clock-minutes'),
+        document.getElementById('js-clock-seconds')
+    );
+
+    function adjustLayout() {
+        var totalHeight = mainWrapper.offsetHeight;
+        document.body.style.paddingTop = totalHeight + 'px';
+        var stickyHeader = document.querySelector('.sticky.top-0');
+        if (stickyHeader) { stickyHeader.style.top = totalHeight + 'px'; }
+    }
+    window.addEventListener('load', adjustLayout);
+    window.addEventListener('resize', adjustLayout);
+    setTimeout(adjustLayout, 500);
+    setTimeout(adjustLayout, 1000);
+    adjustLayout();
+})();
+
+// ========================================================
+// 3. Custom Footer
+// ========================================================
+document.addEventListener("DOMContentLoaded", function() {
+    var footerHTML = ''
+      + '<div id="bleame-custom-footer"><div class="footer-container"><div class="footer-grid">'
+      + '<div class="footer-col footer-brand"><h3 style="color:#D43A69;font-size:24px;margin-bottom:10px">FoXy</h3>'
+      + '<p>\u0645\u0647\u0645\u062A\u0646\u0627 \u0647\u064A \u062C\u0639\u0644 \u0627\u0644\u0639\u0646\u0627\u064A\u0629 \u0627\u0644\u0634\u062E\u0635\u064A\u0629 \u0648\u0627\u0644\u0646\u0638\u0627\u0641\u0629 \u0623\u0633\u0647\u0644 \u0648\u0645\u062A\u0627\u062D\u0629 \u0644\u0644\u062C\u0645\u064A\u0639 \u0628\u0623\u0639\u0644\u0649 \u062C\u0648\u062F\u0629 \u0648\u0628\u062F\u0648\u0646 \u0623\u0644\u0645.</p></div>'
+      + '<div class="footer-col"><h3>\u0627\u0639\u0631\u0641\u064A \u0623\u0643\u062A\u0631</h3><ul class="footer-links">'
+      + '<li><a href="/pages/about-us">\u0645\u0646 \u0646\u062D\u0646</a></li>'
+      + '<li><a href="/pages/Contact-us">\u062A\u0648\u0627\u0635\u0644 \u0645\u0639\u0646\u0627</a></li>'
+      + '<li><a href="/pages/terms-and-conditions">\u0634\u0631\u0648\u0637 \u0627\u0644\u062E\u062F\u0645\u0629</a></li></ul></div>'
+      + '<div class="footer-col"><h3>\u0645\u062D\u062A\u0627\u062C\u0629 \u0645\u0633\u0627\u0639\u062F\u0629\u061F</h3><ul class="footer-links">'
+      + '<li><a href="#">\u0637\u0631\u064A\u0642\u0629 \u0627\u0644\u0627\u0633\u062A\u062E\u062F\u0627\u0645</a></li>'
+      + '<li><a href="/pages/Contact-us">\u0645\u0631\u0643\u0632 \u0627\u0644\u0645\u0633\u0627\u0639\u062F\u0629</a></li>'
+      + '<li><a href="/pages/exchange-and-return-policy">\u0633\u064A\u0627\u0633\u0629 \u0627\u0644\u0627\u0633\u062A\u0631\u062C\u0627\u0639 \u0648\u0627\u0644\u0627\u0633\u062A\u0628\u062F\u0627\u0644</a></li>'
+      + '<li><a href="/pages/privacy-policy">\u0633\u064A\u0627\u0633\u0629 \u0627\u0644\u062E\u0635\u0648\u0635\u064A\u0629</a></li></ul></div>'
+      + '<div class="footer-col"><h3>\u062A\u0648\u0627\u0635\u0644 \u0645\u0639\u0646\u0627</h3><ul class="footer-links">'
+      + '<li><a href="mailto:Info@foxyline.net">Info@foxyline.net</a></li>'
+      + '<li><a href="tel:01080115800" dir="ltr">01080115800</a></li></ul></div>'
+      + '</div>'
+      + '<div class="footer-social-section"><ul class="footer-social">'
+      + '<li><a href="https://www.facebook.com/foxy.egy/" target="_blank" aria-label="Facebook"><svg viewBox="0 0 9 17"><path d="M2.486 16.2084L2.486 8.81845H0L0 5.93845L2.486 5.93845L2.486 3.81845C2.38483 2.79982 2.73793 1.78841 3.45107 1.05407C4.16421 0.319722 5.16485-0.0628415 6.186 0.00844868C6.9284 0.00408689 7.67039 0.0441585 8.408 0.128449V2.69845L6.883 2.69845C6.4898 2.61523 6.08104 2.73438 5.79414 3.01585C5.50724 3.29732 5.3803 3.70373 5.456 4.09845L5.456 5.93845H8.308L7.936 8.81845H5.46L5.46 16.2084H2.486Z"/></svg></a></li>'
+      + '<li><a href="https://www.instagram.com/foxy.egy/" target="_blank" aria-label="Instagram"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C5.827 0 5.555.01 4.702.048 3.85.087 3.269.222 2.76.42a3.921 3.921 0 00-1.417.923c-.445.444-.719.89-.923 1.417-.198.509-.333 1.09-.372 1.942C.01 5.555 0 5.827 0 8s.01 2.445.048 3.298c.039.852.174 1.433.372 1.942.204.526.478.973.923 1.417.444.445.89.719 1.417.923.509.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.445-.01 3.298-.048c.852-.039 1.433-.174 1.942-.372a3.922 3.922 0 001.417-.923c.445-.444.719-.89.923-1.417.198-.509.333-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.298c-.039-.852-.174-1.433-.372-1.942a3.922 3.922 0 00-.923-1.417A3.921 3.921 0 0013.24.42c-.509-.198-1.09-.333-1.942-.372C10.445.01 10.173 0 8 0zm0 1.441c2.136 0 2.39.009 3.233.047.78.036 1.203.166 1.485.276.374.145.64.318.92.598.28.28.453.546.598.92.11.282.24.705.276 1.485.038.844.047 1.097.047 3.233s-.009 2.39-.047 3.233c-.036.78-.166 1.203-.276 1.485-.145.374-.318.64-.598.92-.28.28-.546.453-.92.598-.282.11-.705.24-1.485.276-.844.038-1.097.047-3.233.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.479 2.479 0 01-.92-.598 2.478 2.478 0 01-.598-.92c-.11-.282-.24-.705-.276-1.485-.038-.844-.047-1.097-.047-3.233s.009-2.39.047-3.233c.036-.78.166-1.203.276-1.485.145-.374.318-.64.598-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.844-.038 1.097-.047 3.233-.047zm0 9.226a2.667 2.667 0 110-5.334 2.667 2.667 0 010 5.334zm0-6.775a4.108 4.108 0 100 8.216 4.108 4.108 0 000-8.216zm5.23-.162a.96.96 0 11-1.92 0 .96.96 0 011.92 0z"/></svg></a></li>'
+      + '<li><a href="https://www.tiktok.com/@foxy.egy" target="_blank" aria-label="TikTok"><svg viewBox="0 0 14 16"><path d="M13.6893 6.47331C13.5586 6.48602 13.4273 6.49268 13.296 6.49327C11.8552 6.49347 10.5114 5.76723 9.72211 4.56182V11.1389C9.72211 13.8236 7.54571 16 4.86099 16C2.17627 16-0.00012207 13.8236-0.00012207 11.1389C-0.00012207 8.45417 2.17627 6.27777 4.86099 6.27777C4.96247 6.27777 5.06166 6.28689 5.16143 6.29317V8.68866C5.06166 8.67669 4.96361 8.65845 4.86099 8.65845C3.49077 8.65845 2.37998 9.76923 2.37998 11.1395C2.37998 12.5097 3.49077 13.6205 4.86099 13.6205C6.23148 13.6205 7.44177 12.5407 7.44177 11.1702L7.46571 0H9.75745C9.97355 2.05512 11.6307 3.66035 13.6916 3.81102V6.47331"/></svg></a></li>'
+      + '</ul></div>'
+      + '<div class="footer-bottom">'
+      + '<span class="footer-copyright">\u00A9 \u062D\u0642\u0648\u0642 \u0627\u0644\u0646\u0634\u0631 2026 FOXY. \u062C\u0645\u064A\u0639 \u0627\u0644\u062D\u0642\u0648\u0642 \u0645\u062D\u0641\u0648\u0638\u0629.</span>'
+      + '<div class="footer-payment">'
+      + '<svg width="38" height="24" viewBox="0 0 38 24"><rect width="38" height="24" rx="2" fill="#fff"/><path d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z" fill="#142688"/></svg>'
+      + '<svg width="38" height="24" viewBox="0 0 38 24"><rect width="38" height="24" rx="2" fill="#fff"/><circle fill="#EB001B" cx="15" cy="12" r="7"/><circle fill="#F79E1B" cx="23" cy="12" r="7"/><path fill="#FF5F00" d="M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z"/></svg>'
+      + '</div></div></div></div>';
+
+    document.body.insertAdjacentHTML('beforeend', footerHTML);
+});
+
+// ========================================================
+// 4. Trust Badges
+// ========================================================
+document.addEventListener("DOMContentLoaded", function() {
+    var trustBadgesHTML = ''
+      + '<div class="trust-badges-wrapper" dir="rtl" style="text-align:right;font-family:Tajawal,sans-serif;margin-top:20px">'
+      + '<div class="payment-methods-icons" style="display:flex;gap:12px;align-items:center;margin-bottom:15px;justify-content:center">'
+      + '<img src="https://pngimg.com/d/visa_PNG4.png" alt="Visa" style="height:20px;width:auto">'
+      + '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/1280px-MasterCard_Logo.svg.png" alt="Mastercard" style="height:23px;width:auto">'
+      + '<img src="https://files.easy-orders.net/1772545023970259909.png" alt="COD" style="height:24px;width:auto">'
+      + '<img src="https://files.easy-orders.net/1772545152546601963.png" alt="Instapay" style="height:20px;width:auto">'
+      + '</div>'
+      + '<div class="trust-badges-header" style="margin-bottom:12px;font-weight:700;color:#2e2a39;font-size:14px">'
+      + '\uD83D\uDE9A \u064A\u0635\u0644\u0643 \u0637\u0644\u0628\u0643 \u062E\u0644\u0627\u0644 \u0623\u0633\u0628\u0648\u0639 \u0645\u0646 \u062A\u0627\u0631\u064A\u062E \u0627\u0644\u064A\u0648\u0645</div>'
+      + '<div class="bleame-trust-badges" style="display:flex;gap:15px">'
+      + '<div class="bleame-badge" style="display:flex;align-items:center;gap:8px;background:#f9f9f9;padding:5px 12px;border-radius:50px">'
+      + '<img src="https://cdn-icons-png.flaticon.com/512/709/709790.png" alt="Shipping" style="width:20px;height:auto">'
+      + '<p style="margin:0;font-size:12px;color:#2E2A3A;font-weight:500">\u0634\u062D\u0646 \u0633\u0631\u064A\u0639 \u0639\u0646\u062F \u0637\u0644\u0628 \u0627\u0644\u0639\u0628\u0648\u0629 \u0627\u0644\u0645\u0632\u062F\u0648\u062C\u0629</p>'
+      + '</div></div></div>';
+
+    var checkExist = setInterval(function() {
+        var checkoutBtn = document.querySelector('.checkout_btn');
+        if (checkoutBtn) {
+          var container = checkoutBtn.closest('.mt-5.flex.flex-col');
+          if (container && !(container.nextElementSibling && container.nextElementSibling.classList.contains('trust-badges-wrapper'))) {
+              container.insertAdjacentHTML('afterend', trustBadgesHTML);
+              clearInterval(checkExist);
+          }
+        }
+    }, 500);
+});
+
+// ========================================================
+// 5. Similar Products Title + Discount Text Fix
+// ========================================================
+(function () {
+  function updateSimilarProductsTitle() {
+    var titles = document.querySelectorAll('.home_section_top_title');
+    var found = false;
+    for (var i = 0; i < titles.length; i++) {
+      if (titles[i].textContent.indexOf('Similar Products') !== -1) {
+        titles[i].innerHTML = 'You may also like';
+        titles[i].style.fontSize = '18px';
+        titles[i].style.fontWeight = '500';
+        found = true;
+      }
+    }
+    return found;
+  }
+  if (!updateSimilarProductsTitle()) {
+      var observer1 = new MutationObserver(function() {
+        if (updateSimilarProductsTitle()) observer1.disconnect();
+      });
+      observer1.observe(document.body, { childList: true, subtree: true });
+  }
+})();
+
+(function () {
+  function fixDiscountBadge() {
+    var spans = document.querySelectorAll('span');
+    for (var i = 0; i < spans.length; i++) {
+      var text = spans[i].textContent.trim();
+      if (text.indexOf('Discount') !== -1 && text.indexOf('%') !== -1) {
+        var match = text.match(/(\d+)\s*%/);
+        if (match) {
+          spans[i].textContent = '-' + match[1] + '%';
+        }
+      }
+    }
+  }
+  fixDiscountBadge();
+  var observer2 = new MutationObserver(fixDiscountBadge);
+  observer2.observe(document.body, { childList: true, subtree: true });
+})();
+
+// ========================================================
+// 6. Cart Layout + Price Formatting + Discount Badge + Pack Price
+// ========================================================
+(function () {
+    var debounceTimer = null;
+
+    function applyCartLayout() {
+        var items = document.querySelectorAll('li.cart-item');
+        for (var i = 0; i < items.length; i++) {
+            var item = items[i];
+            var headerRow = item.querySelector('.flex.justify-between.text-base.font-medium.text-gray-900');
+            if (!headerRow) continue;
+            var titleEl = headerRow.querySelector('h3');
+            var unitPriceEl = headerRow.querySelector('p.ms-4');
+            var qtyWrap = item.querySelector('.cart-item-quantity-counter');
+            var deleteBtn = item.querySelector('.cart-item-quantity-counter > button[type="button"].ms-2');
+            if (!titleEl || !unitPriceEl || !qtyWrap || !deleteBtn) continue;
+            deleteBtn.classList.add('cart-remove-top');
+            headerRow.appendChild(deleteBtn);
+            var row = item.querySelector('.cart-qty-price-row');
+            if (!row) {
+                row = document.createElement('div');
+                row.className = 'cart-qty-price-row';
+                var qtyOuterFlex = qtyWrap.closest('.flex');
+                if (qtyOuterFlex && qtyOuterFlex.parentElement) {
+                    qtyOuterFlex.parentElement.insertBefore(row, qtyOuterFlex);
+                }
+                row.appendChild(qtyWrap);
+            }
+            unitPriceEl.classList.add('cart-unit-price');
+            row.appendChild(unitPriceEl);
+        }
+    }
+
+    function formatPrices() {
+        var prices = document.querySelectorAll(
+            '#price, #sale-price, .product_price, del, p.line-through,'
+            + ' .flex.items-center.gap-1.text-\\[\\#131316\\],'
+            + ' p.text-xl.font-bold.text-\\[\\#010101\\].flex.items-center.gap-1'
+        );
+        for (var i = 0; i < prices.length; i++) {
+            var el = prices[i];
+            if (el.getAttribute('data-formatted') === 'true') continue;
+            var raw = el.innerText.replace(/[^0-9.]/g, '');
+            var num = parseFloat(raw);
+            if (isNaN(num) || num === 0) continue;
+            var formatted = num.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+            el.innerHTML = 'LE ' + formatted;
+            el.style.direction = 'rtl';
+            el.style.fontFamily = 'sans-serif';
+            el.setAttribute('data-formatted', 'true');
+        }
+    }
+
+    function addDiscountBadge() {
+        if (document.querySelector('.discount-badge')) return;
+        var salePriceEl = document.querySelector('#sale-price');
+        var oldPriceEl = document.querySelector('p.line-through');
+        if (!salePriceEl || !oldPriceEl) return;
+        var salePrice = parseFloat(salePriceEl.innerText.replace(/[^0-9.]/g, ''));
+        var oldPrice = parseFloat(oldPriceEl.innerText.replace(/[^0-9.]/g, ''));
+        if (isNaN(salePrice) || isNaN(oldPrice) || oldPrice <= salePrice) return;
+        var discount = Math.round(((oldPrice - salePrice) / oldPrice) * 100);
+        var badge = document.createElement('span');
+        badge.className = 'discount-badge bg-[#FF3B30] text-white text-xs md:text-sm font-bold px-2 py-1 rounded-md ms-2';
+        badge.textContent = '\u0648\u0641\u0631 ' + discount + '%';
+        oldPriceEl.insertAdjacentElement('afterend', badge);
+    }
+
+    function syncPackPrice() {
+        if (document.querySelector('.injected-price')) return;
+        var mainPrice = document.querySelector('#sale-price');
+        if (!mainPrice) return;
+        var offerBlocks = document.querySelectorAll('.flex.w-full.cursor-pointer.flex-col.rounded-\\[20px\\]');
+        var targetBlock = null;
+        for (var i = 0; i < offerBlocks.length; i++) {
+            if (offerBlocks[i].textContent.indexOf('1 PACK') !== -1) {
+                targetBlock = offerBlocks[i];
+                break;
+            }
+        }
+        if (!targetBlock) return;
+        var wrapper = targetBlock.querySelector('.flex.gap-2.mb-3');
+        if (!wrapper) return;
+        var priceDiv = document.createElement('div');
+        priceDiv.className = 'flex flex-col items-center gap-2 injected-price';
+        var priceP = document.createElement('p');
+        priceP.className = 'text-xl font-bold text-[#010101] flex items-center gap-1';
+        priceP.style.direction = 'rtl';
+        priceP.style.fontFamily = 'sans-serif';
+        priceP.setAttribute('data-formatted', 'true');
+        priceP.textContent = mainPrice.innerText;
+        priceDiv.appendChild(priceP);
+        wrapper.appendChild(priceDiv);
+    }
+
+    function runAll() {
+        applyCartLayout();
+        formatPrices();
+        addDiscountBadge();
+        syncPackPrice();
+    }
+
+    function debouncedRun() {
+        if (debounceTimer) return;
+        debounceTimer = setTimeout(function () {
+            debounceTimer = null;
+            runAll();
+        }, 250);
+    }
+
+    var obs = new MutationObserver(debouncedRun);
+    obs.observe(document.body, { childList: true, subtree: true });
+
+    var lastUrl = location.href;
+    setInterval(function () {
+        if (location.href !== lastUrl) {
+            lastUrl = location.href;
+            setTimeout(runAll, 500);
+        }
+    }, 800);
+
+    runAll();
+})();
+
+// ========================================================
+// 7. Customer Video Slider (.customer-video)
+// ========================================================
+(function () {
+  function waitForElement(selector, callback, timeout) {
+    timeout = timeout || 7000;
+    var start = Date.now();
+    var interval = setInterval(function() {
+      var el = document.querySelector(selector);
+      if (el) { clearInterval(interval); callback(el); }
+      else if (Date.now() - start > timeout) { clearInterval(interval); }
+    }, 200);
+  }
+
+  function initVideoSlider() {
+    if (!window.jQuery) return;
+    var $slider = jQuery('.customer-video');
+    if (!$slider.length) return;
+    if ($slider.hasClass('slick-initialized')) return;
+    $slider.slick({
+      centerMode: true, centerPadding: '0px', slidesToShow: 4, slidesToScroll: 1,
+      dots: true, arrows: true, infinite: true, focusOnSelect: true,
+      responsive: [
+        { breakpoint: 1200, settings: { slidesToShow: 4 } },
+        { breakpoint: 991,  settings: { slidesToShow: 3 } },
+        { breakpoint: 740,  settings: { slidesToShow: 2, arrows: false } }
+      ]
+    });
+  }
+
+  document.addEventListener('click', function(e) {
+    var wrapper = e.target.closest('.customer-video-wrapper');
+    if (!wrapper) return;
+    var video = wrapper.querySelector('video');
+    if (!video) return;
+    var allVids = document.querySelectorAll('.slick-video');
+    for (var i = 0; i < allVids.length; i++) {
+      if (allVids[i] !== video) {
+        allVids[i].pause();
+        allVids[i].currentTime = 0;
+        var pw = allVids[i].closest('.customer-video-wrapper');
+        if (pw) pw.classList.remove('is-playing');
+      }
+    }
+    if (video.paused) { video.play(); wrapper.classList.add('is-playing'); }
+    else { video.pause(); wrapper.classList.remove('is-playing'); }
+  });
+
+  document.addEventListener('ended', function(e) {
+    if (!e.target.classList || !e.target.classList.contains('slick-video')) return;
+    e.target.currentTime = 0;
+    var pw = e.target.closest('.customer-video-wrapper');
+    if (pw) pw.classList.remove('is-playing');
+  }, true);
+
+  waitForElement('.customer-video', initVideoSlider);
+})();
+
+// ========================================================
+// 8. Slick Sliders (reviews + vsVideo) + Video Modal
+// ========================================================
+(function () {
+    var currentUrl = location.href;
+    var debounceTimer = null;
+
+    function initAllSliders() {
+        if (!window.jQuery || !jQuery.fn || !jQuery.fn.slick) return;
+
+        var vsEl = jQuery('#vsVideoSlider');
+        if (vsEl.length && !vsEl.hasClass('slick-initialized')) {
+            vsEl.slick({
+                slidesToShow: 3, slidesToScroll: 1, dots: false, arrows: false,
+                infinite: false, centerMode: false, rtl: true,
+                responsive: [
+                    { breakpoint: 991, settings: { slidesToShow: 3 } },
+                    { breakpoint: 768, settings: { slidesToShow: 2.2 } },
+                    { breakpoint: 480, settings: { slidesToShow: 2.2 } }
+                ]
+            });
+        }
+
+        var rvEl = jQuery('.reviews-slider');
+        if (rvEl.length && !rvEl.hasClass('slick-initialized')) {
+            rvEl.slick({
+                slidesToShow: 3, slidesToScroll: 1, dots: true, arrows: false,
+                infinite: true, autoplay: true, autoplaySpeed: 4000, speed: 700,
+                cssEase: 'ease', rtl: true,
+                responsive: [
+                    { breakpoint: 1024, settings: { slidesToShow: 2 } },
+                    { breakpoint: 768, settings: { slidesToShow: 1, centerMode: true, centerPadding: '40px' } },
+                    { breakpoint: 480, settings: { slidesToShow: 1, centerMode: true, centerPadding: '20px' } }
+                ]
+            });
+        }
+
+        bindVideoModal();
+    }
+
+    function bindVideoModal() {
+        var modal = document.getElementById('foxyVideoModal') || document.getElementById('vsVideoModal');
+        var modalVideo = document.getElementById('foxyModalVideo') || document.getElementById('vsModalVideo');
+        if (!modal || !modalVideo) return;
+
+        var wraps = document.querySelectorAll('.vs-video-wrap:not(.click-binded)');
+        for (var i = 0; i < wraps.length; i++) {
+            (function (wrap) {
+                wrap.classList.add('click-binded');
+                wrap.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    var source = wrap.querySelector('source');
+                    if (!source) return;
+                    document.body.style.overflow = 'hidden';
+                    if (modalVideo.querySelector('source')) {
+                        modalVideo.querySelector('source').src = source.src;
+                        modalVideo.load();
+                    } else {
+                        modalVideo.src = source.src;
+                    }
+                    modal.classList.add('show');
+                    modal.classList.add('active');
+                    modalVideo.play().catch(function () {});
+                });
+            })(wraps[i]);
+        }
+
+        if (!modal.classList.contains('close-binded')) {
+            modal.classList.add('close-binded');
+
+            function closeModal() {
+                document.body.style.overflow = '';
+                modalVideo.pause();
+                if (modalVideo.querySelector('source')) { modalVideo.querySelector('source').src = ''; }
+                else { modalVideo.src = ''; }
+                modal.classList.remove('show');
+                modal.classList.remove('active');
+            }
+
+            var closeBtn = modal.querySelector('.vs-modal-close, .foxy-modal-close, [class*="close"]');
+            if (closeBtn) closeBtn.addEventListener('click', function (e) { e.stopPropagation(); closeModal(); });
+            modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
+            document.addEventListener('keydown', function (e) { if (e.key === 'Escape' || e.keyCode === 27) closeModal(); });
+
+            window.openFoxyModal = function (videoUrl) {
+                if (!videoUrl) return;
+                document.body.style.overflow = 'hidden';
+                if (modalVideo.querySelector('source')) { modalVideo.querySelector('source').src = videoUrl; modalVideo.load(); }
+                else { modalVideo.src = videoUrl; }
+                modal.classList.add('show');
+                modal.classList.add('active');
+                modalVideo.play().catch(function () {});
+            };
+            window.closeFoxyModal = function (e) { if (e) e.stopPropagation(); closeModal(); };
+        }
+    }
+
+    function debouncedInit() {
+        if (debounceTimer) return;
+        debounceTimer = setTimeout(function () {
+            debounceTimer = null;
+            initAllSliders();
+        }, 300);
+    }
+
+    var obs = new MutationObserver(debouncedInit);
+    obs.observe(document.body, { childList: true, subtree: true });
+
+    setInterval(function () {
+        if (location.href !== currentUrl) {
+            currentUrl = location.href;
+            setTimeout(initAllSliders, 500);
+        }
+    }, 800);
+
+    initAllSliders();
+})();
+
+// ========================================================
+// 9. Foxy Video Player (#videoBox)
+// ========================================================
+(function() {
+  setInterval(function() {
+    var box = document.querySelector('#videoBox:not(.is-binded)');
+    if (box) {
+      box.classList.add('is-binded');
+      var v = document.getElementById('foxyVideo');
+      var btn = document.getElementById('mainPlayBtn');
+
+      function runFoxyVideo(e) {
+        if (e) e.preventDefault();
+        v.play().then(function() {
+          box.classList.add('video-is-playing');
+          v.setAttribute('controls', 'controls');
+        }).catch(function() {
+          v.muted = true;
+          v.play();
+          box.classList.add('video-is-playing');
+          v.setAttribute('controls', 'controls');
+        });
+      }
+
+      if (btn) btn.addEventListener('click', runFoxyVideo);
+      if (v) {
+        v.addEventListener('click', function(e) {
+          if (!box.classList.contains('video-is-playing')) runFoxyVideo(e);
+        });
+        v.addEventListener('ended', function() {
+          v.removeAttribute('controls');
+          v.load();
+          box.classList.remove('video-is-playing');
+        });
+      }
+    }
+  }, 500);
+})();
+</script>
