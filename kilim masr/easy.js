@@ -1,0 +1,600 @@
+ 
+(function() {
+    'use strict';
+
+    let lastPath = location.pathname;
+
+    function initProductThumbnails() {
+            const swiperEl = document.querySelector('.swiper.swiper-initialized');
+                if (location.pathname !== lastPath) {
+            lastPath = location.pathname;
+            document.querySelectorAll('.shopify-thumbnails-wrapper').forEach(el => el.remove());
+        }
+        if (!swiperEl || !swiperEl.querySelector('.sphinx_product_img')) return;
+        if (swiperEl.classList.contains('thumbs-inited')) return;
+        const originalSlides = swiperEl.querySelectorAll('.swiper-slide:not(.swiper-slide-duplicate) img.sphinx_product_img');
+        if (originalSlides.length <= 1) return;
+
+        const thumbsWrapper = document.createElement('div');
+        thumbsWrapper.className = 'shopify-thumbnails-wrapper';
+
+        originalSlides.forEach((imgEl, index) => {
+            const thumb = document.createElement('div');
+            thumb.className = `shopify-thumb-item ${index === 0 ? 'is-active' : ''}`;
+            const imgSrc = imgEl.getAttribute('src') || imgEl.getAttribute('data-src') || imgEl.currentSrc;
+            thumb.innerHTML = `<img src="${imgSrc}">`;
+
+            thumb.addEventListener('click', function() {
+                if (swiperEl.swiper) {
+                    swiperEl.swiper.params.loop ? swiperEl.swiper.slideToLoop(index) : swiperEl.swiper.slideTo(index);
+                }
+            });
+            thumbsWrapper.appendChild(thumb);
+        });
+        swiperEl.classList.add('thumbs-inited');
+        swiperEl.parentNode.insertBefore(thumbsWrapper, swiperEl.nextSibling);
+        if (swiperEl.swiper) {
+            swiperEl.swiper.on('slideChange', function () {
+                const activeIndex = this.realIndex;
+                const items = thumbsWrapper.querySelectorAll('.shopify-thumb-item');
+                items.forEach((t, i) => {
+                    t.classList.toggle('is-active', i === activeIndex);
+                    if (i === activeIndex) t.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                });
+            });
+        }
+    }
+    const observer = new MutationObserver(() => {
+        if (!document.querySelector('.swiper.swiper-initialized')) {
+            document.querySelectorAll('.shopify-thumbnails-wrapper').forEach(el => el.remove());
+        }
+        initProductThumbnails();
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+    initProductThumbnails();
+
+})();
+
+/* ==========================================
+   BLOCK 2
+========================================== */
+(function() {
+    function changeCategoriesTitle() {
+        const sectionTitles = document.querySelectorAll('.home_section_top_title span.relative');
+        
+        sectionTitles.forEach(title => {
+            if (title.childNodes[0] && title.childNodes[0].nodeValue.trim() === 'Categories') {
+                title.childNodes[0].nodeValue = 'Shop by Category ';
+            }
+        });
+    }
+    changeCategoriesTitle();
+    const observer = new MutationObserver(changeCategoriesTitle);
+    observer.observe(document.body, { childList: true, subtree: true });
+})();
+
+/* ==========================================
+   BLOCK 3
+========================================== */
+(function () {
+  function waitForHeader(callback) {
+    const check = setInterval(() => {
+      const header =
+        document.querySelector(".bg-white.sticky.top-0.w-full.z-30") ||
+        document.querySelector(".fixed.inset-0.z-40") ||
+        document.querySelector("header.default_header") ||
+        document.querySelector("header");
+
+      if (header) {
+        clearInterval(check);
+        callback(header);
+      }
+    }, 200);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+     const oldBar = document.querySelector(".shine_header_top_text");
+    if (oldBar) oldBar.style.display = "none";
+
+    waitForHeader(function (header) {
+      const BAR_HEIGHT = 35;
+            header.style.top = "0px"; // نثبت الهيدر في الأعلى تماماً
+      header.style.willChange = "transform";
+      header.style.transition = "transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)";
+      const messages = [
+        "welcome to our store",
+        "Made with love",
+        "Customize your piece"
+      ];
+      const bar = document.createElement("div");
+      bar.id = "fixed-announcement-bar";
+      bar.style.cssText = `
+        background-color: #f3f3f3;
+        color: #13134a;
+        padding: 8px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: inherit;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 40;
+        height: ${BAR_HEIGHT}px;
+        box-sizing: border-box;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        direction: ltr;
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* أنيميشن الظهور والاختفاء */
+        will-change: transform;
+      `;
+      const btnStyle = `
+        background: transparent;
+        color: #13134a;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        padding: 0 10px;
+        opacity: 0.75;
+      `;
+      const btnPrev = document.createElement("button");
+      btnPrev.type = "button";
+      btnPrev.setAttribute("aria-label", "Previous");
+      btnPrev.textContent = "❮";
+      btnPrev.style.cssText = btnStyle;
+      const btnNext = document.createElement("button");
+      btnNext.type = "button";
+      btnNext.setAttribute("aria-label", "Next");
+      btnNext.textContent = "❯";
+      btnNext.style.cssText = btnStyle;
+      const wrapper = document.createElement("div");
+      wrapper.className = "ann-wrapper";
+      wrapper.style.cssText = `
+        position: relative;
+        height: 24px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 250px;
+        text-align: center;
+      `;
+      const slides = messages.map((msg, index) => {
+        const s = document.createElement("div");
+        s.style.cssText = `
+          position: absolute;
+          opacity: 0;
+          transform: translateY(15px);
+          white-space: nowrap;
+          transition: opacity 0.4s ease, transform 0.4s ease;
+          width: 100%;
+          pointer-events: none;
+        `;
+        s.textContent = msg;
+
+        if (index === 0) {
+          s.style.opacity = "1";
+          s.style.transform = "translateY(0)";
+        }
+        wrapper.appendChild(s);
+        return s;
+      });
+      bar.appendChild(btnPrev);
+      bar.appendChild(wrapper);
+      bar.appendChild(btnNext);
+      document.body.prepend(bar);
+    
+      let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop || 0;
+      let ticking = false;
+
+      function onScroll() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop || 0;
+
+        if (scrollTop <= 20) {
+          bar.style.transform = "translateY(0)";
+          header.style.transform = `translateY(${BAR_HEIGHT}px)`;
+        } else {
+          bar.style.transform = "translateY(-100%)";
+
+          if (scrollTop > lastScrollTop) {
+            header.style.transform = "translateY(-100%)";
+          } else {
+            header.style.transform = "translateY(0)";
+          }
+        }
+
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; 
+        ticking = false;
+      }
+
+      window.addEventListener("scroll", () => {
+        if (!ticking) {
+          requestAnimationFrame(onScroll);
+          ticking = true;
+        }
+      }, { passive: true });
+      let index = 0;
+      let interval;
+
+      function showSlide(i) {
+        slides.forEach((s) => {
+          s.style.opacity = "0";
+          s.style.transform = "translateY(15px)";
+        });
+        slides[i].style.opacity = "1";
+        slides[i].style.transform = "translateY(0)";
+      }
+
+      function nextSlide() {
+        index = (index + 1) % slides.length;
+        showSlide(index);
+      }
+      function prevSlide() {
+        index = (index - 1 + slides.length) % slides.length;
+        showSlide(index);
+      }
+      function startAuto() {
+        interval = setInterval(nextSlide, 4000);
+      }
+      function restartAuto() {
+        clearInterval(interval);
+        startAuto();
+      }
+      btnNext.addEventListener("click", () => {
+        nextSlide();
+        restartAuto();
+      });
+      btnPrev.addEventListener("click", () => {
+        prevSlide();
+        restartAuto();
+      });
+      startAuto();
+      onScroll(); // تطبيق الحالة الابتدائية فور التحميل
+    });
+  });
+})();
+
+/* ==========================================
+   BLOCK 4
+========================================== */
+(function() {
+  'use strict';
+  function initFadeUpAnimation() {
+    const animatedElements = document.querySelectorAll('.motion-fade-up:not(.observer-added)');
+    if (animatedElements.length === 0) return; // مفيش عناصر جديدة
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.15 
+    };
+
+    const intersectionObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target); 
+        }
+      });
+    }, observerOptions);
+    animatedElements.forEach(el => {
+      intersectionObserver.observe(el);
+      el.classList.add('observer-added'); // وسم العنصر عشان منراقبوش مرتين
+    });
+  }
+
+  // 2. تشغيل فوري أول ما السكريبت يتقري
+  initFadeUpAnimation();
+
+  // 3. مراقبة الـ DOM عشان لو الصفحة حملت السكشن بعدين (React/SPA)
+  const domObserver = new MutationObserver(() => {
+    initFadeUpAnimation();
+  });
+  domObserver.observe(document.body, { childList: true, subtree: true });
+
+  // 4. تشغيل إضافي لو الصفحة استخدمت حدث التنقل الداخلي
+  window.addEventListener('popstate', () => {
+    setTimeout(initFadeUpAnimation, 200);
+  });
+})();
+
+/* ==========================================
+   BLOCK 5
+========================================== */
+(function () {
+    // 1. تخزين محتوى الفوتر في متغير
+    var footerHTML = `
+      <footer id="custom-kiliim-footer">
+        <div class="cf-container">
+          <div class="cf-top">
+            <div class="cf-block">
+              <div class="cf-accordion-header">
+                <h3 class="cf-heading">Shop</h3>
+                <svg class="cf-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none">
+                  <path d="M10 3.125v13.75M3.125 10h13.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <ul class="cf-list">
+                <li><a href="/collections/rug">Rug</a></li>
+                <li><a href="/collections/Hallway-Runner">Hallway Runner</a></li>
+                <li><a href="/collections/Bath-Mat">Bath Mat</a></li>
+                <li><a href="/collections/Cushions">Cushions</a></li>
+              </ul>
+            </div>
+
+            <div class="cf-block">
+              <div class="cf-accordion-header">
+                <h3 class="cf-heading">Info</h3>
+                <svg class="cf-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none">
+                  <path d="M10 3.125v13.75M3.125 10h13.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <ul class="cf-list" style="direction: rtl;">
+                <li><a href="/pages/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/pages/about-us">About Us</a></li>
+                <li><a href="/pages/refund-policy">Return and Refund Policy</a></li>
+                <li><a href="/pages/shipping-policy">Delivery Policy</a></li>
+               </ul>
+            </div>
+          </div>
+
+          <div class="cf-bottom">
+            <div class="cf-socials">
+              <a href="https://www.facebook.com/share/15rNmrGBgE/?mibextid=wwXIfr" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4 12.4972C4 16.6986 7.06844 20.1919 11.081 20.9L11.1284 20.8621C11.1126 20.8591 11.0968 20.856 11.081 20.8528V14.8575H8.9567V12.4972H11.081V10.6089C11.081 8.48464 12.45 7.30447 14.3855 7.30447C14.9992 7.30447 15.6601 7.39888 16.2737 7.4933V9.6648H15.188C14.1494 9.6648 13.9134 10.1841 13.9134 10.845V12.4972H16.1793L15.8017 14.8575H13.9134V20.8528C13.8976 20.856 13.8818 20.8591 13.866 20.8621L13.9134 20.9C17.926 20.1919 20.9944 16.6986 20.9944 12.4972C20.9944 7.82374 17.1707 4 12.4972 4C7.82374 4 4 7.82374 4 12.4972Z" fill="currentColor"></path></svg>
+              </a>
+              <a href="https://www.instagram.com/kilimmasr?igsh=cTFwMHF0aTlweDJh" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.7255 3C9.35597 3 9.0586 3.01036 8.12796 3.05271C7.19914 3.09525 6.56515 3.2423 6.0104 3.45806C5.43656 3.68091 4.9498 3.97902 4.46485 4.46416C3.97953 4.94913 3.68144 5.43591 3.45787 6.00958C3.24157 6.56453 3.09434 7.19872 3.05253 8.12721C3.01091 9.05788 3 9.35544 3 11.725C3 14.0946 3.01054 14.391 3.05271 15.3217C3.09543 16.2506 3.24248 16.8846 3.45805 17.4393C3.68107 18.0132 3.97917 18.5 4.4643 18.9849C4.94907 19.4703 5.43584 19.7691 6.00931 19.9919C6.56442 20.2077 7.1986 20.3548 8.12724 20.3973C9.05787 20.4396 9.35506 20.45 11.7244 20.45C14.094 20.45 14.3905 20.4396 15.3211 20.3973C16.25 20.3548 16.8847 20.2077 17.4398 19.9919C18.0135 19.7691 18.4995 19.4703 18.9843 18.9849C19.4696 18.5 19.7677 18.0132 19.9912 17.4395C20.2057 16.8846 20.353 16.2504 20.3966 15.3219C20.4384 14.3912 20.4493 14.0946 20.4493 11.725C20.4493 9.35544 20.4384 9.05806 20.3966 8.12739C20.353 7.19854 20.2057 6.56453 19.9912 6.00976C19.7677 5.43591 19.4696 4.94913 18.9843 4.46416C18.4989 3.97884 18.0136 3.68073 17.4393 3.45806C16.8831 3.2423 16.2487 3.09525 15.3199 3.05271C14.3892 3.01036 14.093 3 11.7227 3H11.7255ZM10.9428 4.57232C11.1751 4.57195 11.4343 4.57232 11.7255 4.57232C14.055 4.57232 14.3311 4.58068 15.251 4.62249C16.1016 4.66139 16.5633 4.80353 16.8709 4.92295C17.278 5.08109 17.5683 5.27014 17.8735 5.57551C18.1789 5.88089 18.3679 6.17172 18.5264 6.57889C18.6458 6.88608 18.7881 7.34778 18.8269 8.19846C18.8687 9.11822 18.8777 9.39452 18.8777 11.723C18.8777 14.0515 18.8687 14.3278 18.8269 15.2475C18.788 16.0982 18.6458 16.5599 18.5264 16.8671C18.3683 17.2743 18.1789 17.5642 17.8735 17.8694C17.5681 18.1748 17.2782 18.3638 16.8709 18.522C16.5637 18.6419 16.1016 18.7837 15.251 18.8226C14.3313 18.8644 14.055 18.8735 11.7255 18.8735C9.39578 18.8735 9.11968 18.8644 8.19994 18.8226C7.34928 18.7833 6.8876 18.6412 6.57987 18.5218C6.17271 18.3636 5.88189 18.1746 5.57652 17.8692C5.27116 17.5638 5.08212 17.2737 4.92362 16.8664C4.8042 16.5592 4.66188 16.0975 4.62316 15.2468C4.58136 14.3271 4.573 14.0508 4.573 11.7208C4.573 9.39088 4.58136 9.11604 4.62316 8.19628C4.66206 7.3456 4.8042 6.8839 4.92362 6.57634C5.08176 6.16917 5.27116 5.87834 5.57652 5.57297C5.88189 5.26759 6.17271 5.07855 6.57987 4.92005C6.88741 4.80008 7.34928 4.6583 8.19994 4.61921C9.0048 4.58286 9.31671 4.57195 10.9428 4.57014V4.57232ZM16.3827 6.02103C15.8046 6.02103 15.3357 6.48945 15.3357 7.06767C15.3357 7.6457 15.8046 8.11467 16.3827 8.11467C16.9607 8.11467 17.4296 7.6457 17.4296 7.06767C17.4296 6.48964 16.9607 6.02067 16.3827 6.02067V6.02103ZM11.7255 7.24435C9.25109 7.24435 7.24495 9.25055 7.24495 11.725C7.24495 14.1994 9.25109 16.2047 11.7255 16.2047C14.1998 16.2047 16.2053 14.1994 16.2053 11.725C16.2053 9.25055 14.1997 7.24435 11.7253 7.24435H11.7255ZM11.7255 8.81667C13.3315 8.81667 14.6337 10.1187 14.6337 11.725C14.6337 13.3311 13.3315 14.6333 11.7255 14.6333C10.1192 14.6333 8.81722 13.3311 8.81722 11.725C8.81722 10.1187 10.1192 8.81667 11.7255 8.81667Z" fill="currentColor"></path></svg>
+              </a>
+            </div>
+            
+            <div class="cf-copyright">
+              © 2026 <a href="/">Kiliim Masr</a>. All rights reserved.
+            </div>
+          </div>
+
+        </div>
+      </footer>
+    `;
+
+    // 2. كود خفيف لحقن الفوتر وتفعيل خصائصه
+    function injectCustomFooter() {
+        // لو الفوتر موجود أصلاً ميعملش حاجة عشان التكرار
+        if (document.getElementById('custom-kiliim-footer')) return;
+        
+        var mainWrapper = document.getElementById('__next') || document.body;
+        if (!mainWrapper) return;
+
+        // وضع الفوتر في آخر الصفحة
+        mainWrapper.insertAdjacentHTML('beforeend', footerHTML);
+
+        // تفعيل الطي/الفتح (Accordion) للموبايل
+        var accordionHeaders = document.querySelectorAll('#custom-kiliim-footer .cf-accordion-header');
+        accordionHeaders.forEach(function(header) {
+            header.addEventListener('click', function() {
+                if (window.innerWidth > 768) return; // يشتغل في الموبايل بس
+                this.parentElement.classList.toggle('is-open');
+            });
+        });
+    }
+    var timer = null;
+    function debouncedRun() {
+        if (timer) clearTimeout(timer);
+        timer = setTimeout(injectCustomFooter, 100); 
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', injectCustomFooter);
+    } else {
+        injectCustomFooter();
+    }
+    var observer = new MutationObserver(debouncedRun);
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+
+})();
+
+/* ==========================================
+   BLOCK 6
+========================================== */
+(function () {
+  function updateSimilarProductsTitle() {
+    const titles = document.querySelectorAll('.home_section_top_title');
+    titles.forEach(title => {
+      if (title.textContent.includes('Similar Products')) {
+        title.innerHTML = 'You may also like';
+        title.style.fontSize = '20px';
+        title.style.fontWeight = '500';
+        return true;
+      }
+    });
+    return false;
+  }
+  if (updateSimilarProductsTitle()) return;
+  const observer = new MutationObserver(() => {
+    if (updateSimilarProductsTitle()) {
+      observer.disconnect(); 
+    }
+  });
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+})();
+
+(function() {
+    'use strict';
+    function updateSaleBadges() {
+        const badges = document.querySelectorAll('.bg-\\[\\#C4301C\\].rounded-full');
+                badges.forEach(badge => {
+            if (badge.innerText !== "SALE") {
+                badge.innerText = "SALE";
+                                badge.style.display = "inline-flex";
+                badge.style.alignItems = "center";
+                badge.style.justifyContent = "center";
+                badge.style.minWidth = "fit-content";
+            }
+        });
+    }
+    updateSaleBadges();
+    const observer = new MutationObserver(() => {
+        updateSaleBadges();
+    });
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+})();
+
+/* ==========================================
+   BLOCK 7
+========================================== */
+(function () {
+  function waitFor(selector, cb, timeout = 10000) {
+    const start = Date.now();
+    const t = setInterval(() => {
+      if (document.querySelector(selector)) { clearInterval(t); cb(); }
+      if (Date.now() - start > timeout) clearInterval(t);
+    }, 200);}
+  function applyCartLayout() {
+    document.querySelectorAll('li.cart-item').forEach((item) => {
+      const headerRow = item.querySelector('.flex.justify-between.text-base.font-medium.text-gray-900');
+      if (!headerRow) return;
+      const titleEl = headerRow.querySelector('h3');
+      const unitPriceEl = headerRow.querySelector('p.ms-4'); // 2000 EGP
+      const qtyWrap = item.querySelector('.cart-item-quantity-counter');
+      const deleteBtn = item.querySelector('.cart-item-quantity-counter > button[type="button"].ms-2');
+      if (!titleEl || !unitPriceEl || !qtyWrap || !deleteBtn) return;
+      deleteBtn.classList.add('cart-remove-top');
+      headerRow.appendChild(deleteBtn);
+      let row = item.querySelector('.cart-qty-price-row');
+      if (!row) {
+        row = document.createElement('div');
+        row.className = 'cart-qty-price-row';
+        const qtyOuterFlex = qtyWrap.closest('.flex'); 
+        qtyOuterFlex.parentElement.insertBefore(row, qtyOuterFlex);
+        row.appendChild(qtyWrap);
+      }
+      unitPriceEl.classList.add('cart-unit-price');
+      row.appendChild(unitPriceEl);
+    });}
+  waitFor('li.cart-item', applyCartLayout);
+  const obs = new MutationObserver(() => applyCartLayout());
+  obs.observe(document.documentElement, { childList: true, subtree: true });
+})();
+
+/* ==========================================
+   BLOCK 8
+========================================== */
+(function() {    'use strict';
+    function initCustomGallery() {
+        const thumbnailsGrid = document.querySelector('.sphinx_product_images_grid');
+        if (!thumbnailsGrid || thumbnailsGrid.dataset.customized) return;
+        thumbnailsGrid.dataset.customized = "true";
+        const sliderContainer = document.createElement('div');
+        sliderContainer.className = 'custom-thumbnail-slider';
+        const svgIcon = `<svg aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 10 6"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path></svg>`;
+        const prevBtn = document.createElement('button');
+        prevBtn.className = 'custom-slider-btn prev';
+        prevBtn.innerHTML = svgIcon;
+        const nextBtn = document.createElement('button');
+        nextBtn.className = 'custom-slider-btn next';
+        nextBtn.innerHTML = svgIcon;
+        thumbnailsGrid.parentNode.insertBefore(sliderContainer, thumbnailsGrid);
+        sliderContainer.appendChild(prevBtn);
+        sliderContainer.appendChild(thumbnailsGrid);
+        sliderContainer.appendChild(nextBtn);
+        const scrollAmount = 150; // المسافة التي سيتم تمريرها عند الضغط
+        nextBtn.addEventListener('click', () => {
+            thumbnailsGrid.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        });
+        prevBtn.addEventListener('click', () => {
+            thumbnailsGrid.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        });
+        function updateButtons() {
+            prevBtn.disabled = thumbnailsGrid.scrollLeft <= 0;
+            nextBtn.disabled = thumbnailsGrid.scrollLeft + thumbnailsGrid.clientWidth >= thumbnailsGrid.scrollWidth - 1;
+        }
+        thumbnailsGrid.addEventListener('scroll', updateButtons);
+        setTimeout(updateButtons, 100);
+        const thumbButtons = thumbnailsGrid.querySelectorAll('button[role="tab"]');
+        thumbButtons.forEach(btn => {
+            btn.addEventListener('click', function() {
+                thumbButtons.forEach(b => {
+                    b.setAttribute('aria-selected', 'false');
+                    b.querySelector('.outline').classList.remove('outline-2');
+                    b.querySelector('.outline').classList.add('outline-0');
+                });
+                this.setAttribute('aria-selected', 'true');
+                this.querySelector('.outline').classList.remove('outline-0');
+                this.querySelector('.outline').classList.add('outline-2');
+            });
+        });
+    }
+    document.addEventListener("DOMContentLoaded", initCustomGallery);
+    const observer = new MutationObserver(() => {
+        initCustomGallery();
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+})();
+
+(function () {
+    function updatePricePrefix() {
+        var isProductPage = window.location.pathname.includes('/products/');
+        document.documentElement.style.setProperty('--price-prefix', isProductPage ? '"LE"' : '"From LE"');}
+    function formatPriceNumber(el) {
+        if (!el) return;
+        el.classList.add('km-price-styled');
+        var textNode = null;
+        for (var j = 0; j < el.childNodes.length; j++) {
+            if (el.childNodes[j].nodeType === 3 && /[0-9]/.test(el.childNodes[j].nodeValue)) {
+                textNode = el.childNodes[j];
+                break;}}
+        if (!textNode) return;
+        var raw = textNode.nodeValue.replace(/[^0-9.]/g, '');
+        var num = parseFloat(raw);
+        if (isNaN(num)) return;
+        var formatted = num.toLocaleString('en-US', {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2
+        });
+        if (textNode.nodeValue !== formatted) {
+            textNode.nodeValue = formatted; }
+    }
+    function runFormatter() {
+        updatePricePrefix(); 
+        var selectors = [
+            '#price',
+            '#sale-price',
+            '.product_price',
+            'del',
+            'p.line-through',
+            '.flex.items-center.gap-1.text-\\[\\#131316\\]',
+            'p.text-xl.font-bold.text-\\[\\#010101\\].flex.items-center.gap-1',
+            'span.flex.items-center.gap-1.text-xl.md\\:text-\\[32px\\].font-bold.text-\\[\\#010101\\]'
+        ].join(',');
+        document.querySelectorAll(selectors).forEach(formatPriceNumber);}
+    var timer = null;
+    function debouncedRun() {
+        if (timer) clearTimeout(timer);
+        timer = setTimeout(runFormatter, 50); }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', runFormatter);
+    } else {
+        runFormatter();}
+    var observer = new MutationObserver(debouncedRun);
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+        characterData: true 
+    });
+    var originalPushState = history.pushState;
+    history.pushState = function() {
+        originalPushState.apply(this, arguments);
+        debouncedRun(); };
+    window.addEventListener('popstate', debouncedRun);
+})();
+ 
