@@ -531,9 +531,16 @@ div[title="اسم المنتج التاني هنا"] button[aria-label="Add to c
         transform: translateX(0);  
     }
 }
-input.global_input.block.w-full.rounded-\[14px\].border-gray-200.py-2\.5.md\:py-3\.5.placeholder\:text-\[\#61758A\].focus\:border-skin-primary.focus\:ring-skin-primary {
+.flex.w-full.flex-1.items-end input.global_input[placeholder="Search"] {
     border: 1px solid #13134a !important;
-    border-radius: 1px !important;}button.flex.items-center.justify-center.gap-2.py-3.px-8.text-base.font-medium.transition-colors.duration-200.ease-in-out.focus\:outline-none.border.border-transparent.bg-skin-primary.hover\:bg-skin-primary.hover\:bg-opacity-80.active\:bg-opacity-90.text-white.\!py-2.md\:\!py-3.text-base.rounded-full.max-h-10 {
+    border-radius: 1px !important;
+}
+.flex.w-full.flex-1.items-end input.global_input[placeholder="Search"]:focus {
+    border-color: #13134a !important;
+    box-shadow: 0 0 0 1px #13134a !important; /* لون تأثير الـ Focus */
+}
+
+button.flex.items-center.justify-center.gap-2.py-3.px-8.text-base.font-medium.transition-colors.duration-200.ease-in-out.focus\:outline-none.border.border-transparent.bg-skin-primary.hover\:bg-skin-primary.hover\:bg-opacity-80.active\:bg-opacity-90.text-white.\!py-2.md\:\!py-3.text-base.rounded-full.max-h-10 {
     background: transparent;color: #13134a;text-decoration-line: underline;}
 
 /* ==========================================
@@ -925,4 +932,38 @@ direction: ltr !important;font-family: sans-serif !important;display: inline-fle
 .km-price-styled > span {display: none !important;}
 .km-price-styled::before {content: var(--price-prefix, "LE"); font-weight: inherit;}
 del.km-price-styled::before, .line-through.km-price-styled::before {content: "LE" !important;}
- 
+ @media (max-width: 768px) {
+     .md\:hidden.flex.flex-row.overflow-x-auto {
+        scroll-snap-type: x mandatory; /* إضافة نعومة في السحب */
+        padding-right: 10px; /* مسافة من اليمين */
+        padding-left: 10px; /* مسافة من اليسار */
+        scrollbar-width: none; /* إخفاء شريط التمرير */gap: 10px;
+    }
+    .md\:hidden.flex.flex-row.overflow-x-auto::-webkit-scrollbar {
+        display: none;
+    }
+    
+     .md\:hidden.flex.flex-row.overflow-x-auto > div {
+        flex: 0 0 49% !important; /* الكارت ياخد 42% من الشاشة */
+        scroll-snap-align: start;
+    }
+    
+     .md\:hidden.flex.flex-row.overflow-x-auto .min-w-\[164px\] {
+        min-width: unset !important;
+        width: 100% !important;
+    }
+}
+body {
+      background-color: #ffffff !important; 
+  }
+  
+   #__next {
+      opacity: 0;
+      animation: revealSite 0.5s ease-in-out forwards;
+      animation-delay: 0.17s; 
+  }
+  
+  @keyframes revealSite {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+  }
