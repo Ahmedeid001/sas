@@ -254,12 +254,12 @@ div:not(.default_header) button svg {
     BORDER-RADIUS: 4PX;
     PADDING: 10px;
     BORDER: NONE;
-}.md\:hidden.flex.flex-row.overflow-x-auto.h-full.gap-4 {
+}/*.md\:hidden.flex.flex-row.overflow-x-auto.h-full.gap-4 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-/* ==========================================
+ ==========================================
    BLOCK 2
 ========================================== */
   /* ==========================================
