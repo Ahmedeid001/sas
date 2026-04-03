@@ -255,7 +255,9 @@ margin-left: -10px;    order: 40;
       margin-left: 0;
       margin-right: 8px;
   }
- 
+ .h-full.w-full.flex.justify-center.items-center.gap-8 {
+    color: #f3f3f3;
+}
   /* جعل كلمة EGP بنفس سماكة خط السعر (Bold) */
   #sale-price + span,
   #sale-price + span span,p.text-sm.md\:text-xl.text-\[\#61758A\].line-through.flex.items-center.gap-0\.5 {
