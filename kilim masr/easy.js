@@ -123,7 +123,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 40;
+        z-index: 20;
         height: ${BAR_HEIGHT}px;
         box-sizing: border-box;
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
