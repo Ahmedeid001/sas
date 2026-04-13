@@ -192,7 +192,7 @@ span.flex.items-center.gap-1.text-\[\#131316\] {
         border-radius: 1px;
     }.md\:hidden.flex.flex-row.overflow-x-auto.h-full.gap-4 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    display: grid;padding-bottom: 30px;
+    display: grid; 
 }
 }.mt-4.flex.items-center.justify-center.gap-2 {
     display: none;
@@ -277,7 +277,8 @@ button.checkout_btn {
     top: 4px;
     left: 4px;
     border-radius: 2px;
-    padding: 6px 8px;
+        padding: 4px 6px;
+    font-size: x-small;
 }.my-6.md\:my-8.flex.flex-col.justify-center {
     display: none;
 }.flex.items-center.gap-7 {
