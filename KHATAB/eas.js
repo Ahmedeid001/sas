@@ -73,7 +73,7 @@
         if (source && target && !document.querySelector('.js-moved-breadcrumb')) {
             const newBread = document.createElement('div');
             newBread.className = 'js-moved-breadcrumb';
-            newBread.style.cssText = `display:flex; align-items:center; margin-bottom:15px; font-size:11px !important; white-space:nowrap; color:#61758A;`;
+            newBread.style.cssText = `display:flex; align-items:center; flex-wrap: wrap;margin-bottom:15px; font-size:11px !important; white-space:nowrap; color:#61758A;`;
             newBread.innerHTML = source.innerHTML;
 
             const style = document.createElement('style');
