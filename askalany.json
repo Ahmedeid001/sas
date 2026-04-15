@@ -1,0 +1,1757 @@
+{
+  "url": "https://askalanyjewellery.com",
+  "title": "Askalany Jewellery",
+  "logo": "http://askalanyjewellery.com/cdn/shop/files/askalany_logo_type_blue-04.png?v=1735063786",
+  "collections": [
+    {
+      "title": "All Bracelets",
+      "handle": "all-bracelets",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/collections/askalanyimages-10.png?v=1760018214"
+    },
+    {
+      "title": "All Earrings",
+      "handle": "all-earrings",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/collections/july-64.jpg?v=1760017318"
+    },
+    {
+      "title": "All Necklaces",
+      "handle": "all-necklaces",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/collections/july-85.jpg?v=1760612894"
+    },
+    {
+      "title": "All Rings",
+      "handle": "all-rings",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/collections/DSCF1929.jpg?v=1760017146"
+    },
+    {
+      "title": "BRACELETS",
+      "handle": "bracelets",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/collections/askalanyimages-17_5d76fdf7-59cc-4049-86f4-f6c20838dfb3.jpg?v=1760017094"
+    }
+  ],
+  "products": [
+    {
+      "title": "Diamond Tennis Bracelet",
+      "handle": "diamond-tennis-bracelet",
+      "description": "<p>A timeless tennis bracelet crafted in white gold, featuring a continuous line of brilliant round diamonds in classic prong settings. Designed for maximum sparkle and fluid movement, this piece is the epitome of sophistication—perfect for everyday elegance or pairing with evening wear for a touch of radiant glamour.</p>\n<p>Product Details:</p>\n<p>Diamond Weight 0.03cts: Around 1.60 Carats </p>\n<p>Diamond Weight 0.05cts: Around 2.50 Carats </p>\n<p>Diamond Weight 0.07cts: Around 3.13 Carats </p>\n<p>Diamond Weight 0.10cts: Around 3.58 Carats </p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat White Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/16_66d4e0f0-9d24-4509-abb3-4ed4a1076faa.png?v=1758019653",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/16_66d4e0f0-9d24-4509-abb3-4ed4a1076faa.png?v=1758019653",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/4.png?v=1763378438"
+      ],
+      "price": "143850.00",
+      "url": "https://askalanyjewellery.com/products/diamond-tennis-bracelet",
+      "options": [
+        {
+          "name": "Stone Size",
+          "values": [
+            "0.03cts",
+            "0.05cts",
+            "0.07cts",
+            "0.10cts",
+            "> 0.10cts"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Radiance Teardrop Diamond Bangle",
+      "handle": "radiance-teardrop-diamond-bangle",
+      "description": "<p>This elegant bangle features a continuous row of teardrop-shaped diamonds, each framed with delicate pavé detailing, set in lustrous yellow gold. The design creates a harmonious balance between brilliance and sophistication, making it a timeless piece that transitions effortlessly from day to evening. Perfect for stacking with other bangles or wearing alone as a statement of refined elegance</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 1.68 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/671.jpg?v=1761574202",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/671.jpg?v=1761574202",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/WhatsAppImage2025-09-30at12.03.53PM_2.jpg?v=1763380450",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/WhatsApp_Image_2025-09-30_at_12.03.53_PM_1.jpg?v=1763380450"
+      ],
+      "price": "206850.00",
+      "url": "https://askalanyjewellery.com/products/radiance-teardrop-diamond-bangle",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Emerald Diamond Row Bangle",
+      "handle": "emerald-diamond-row-bangle",
+      "description": "<p>A timeless and elegant bracelet featuring square-cut green gemstones set in a sleek white-gold toned band. Designed with a secure clasp for everyday wear, this piece blends classic refinement with a touch of modern sophistication. Perfect for stacking or wearing solo as a statement of understated luxury.</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/45.jpg?v=1742324415",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/45.jpg?v=1742324415"
+      ],
+      "price": "88200.00",
+      "url": "https://askalanyjewellery.com/products/emerald-diamond-row-bangle",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dégradé Diamond Bracelet",
+      "handle": "degrade-diamond-bracelet",
+      "description": "<p>A perfect balance of elegance and simplicity, this bracelet features a sleek row of round brilliant-cut diamonds set in radiant yellow gold. The double-chain design adds a refined touch, making it both durable and stylish. Lightweight yet luxurious, it’s ideal for layering with other pieces or wearing solo as a subtle statement of sophistication.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.36 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/42_af15634c-1c01-44ba-b480-e0409cbdb25e.png?v=1742323748",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/42_af15634c-1c01-44ba-b480-e0409cbdb25e.png?v=1742323748",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/july-27_2d5fc6f9-df3f-44fb-bf9f-0e0a1b053669.jpg?v=1758702976",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/july-14_f778e22e-fe66-4767-9f5c-37c532701f86.jpg?v=1758702981"
+      ],
+      "price": "39000.00",
+      "url": "https://askalanyjewellery.com/products/degrade-diamond-bracelet",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Solstice Oval Bangle",
+      "handle": "solstice-oval-bangle",
+      "description": "<p>A sleek, gold bangle designed with soft, flowing curves and accented by a delicate oval-shaped center. Its minimalist silhouette blends modern elegance with subtle sparkle, making it perfect for everyday wear or special occasions.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.45 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/7_bf823928-d272-48d6-b3db-9c7c63de3604.jpg?v=1764855857",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/7_bf823928-d272-48d6-b3db-9c7c63de3604.jpg?v=1764855857",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-25.jpg?v=1764591964",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-44.jpg?v=1764591963"
+      ],
+      "price": "69300.00",
+      "url": "https://askalanyjewellery.com/products/solstice-oval-bangle",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Floral Brilliance Diamond Bangle",
+      "handle": "floral-brilliance-diamond-bangle",
+      "description": "<p>A golden bangle adorned with clusters of round and marquise diamonds arranged in a delicate floral pattern. Each blossom sparkles with radiance, creating a feminine and graceful design that adds a touch of nature’s beauty to your wrist.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 2.29 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/IMG_0089.jpg?v=1758887415",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/IMG_0089.jpg?v=1758887415",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/WhatsApp_Image_2025-09-30_at_12.03.52_PM_2.jpg?v=1764599289",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/WhatsApp_Image_2025-09-30_at_12.03.53_PM.jpg?v=1759223396"
+      ],
+      "price": "218400.00",
+      "url": "https://askalanyjewellery.com/products/floral-brilliance-diamond-bangle",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rose Radiance Marquise Bangle",
+      "handle": "rose-radiance-marquise-bangle",
+      "description": "<p>A refined rose gold bangle lined with alternating marquise and round diamonds, creating a seamless flow of brilliance around the wrist. The warm hue of rose gold enhances the sparkle of each diamond, offering a romantic yet modern elegance. Perfect for stacking with yellow or white gold pieces, or wearing solo as a delicate statement of sophistication.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 1.85 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Rose Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/9_69d08f28-43b3-434e-8a95-d87fa81f9821.jpg?v=1758017572",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/9_69d08f28-43b3-434e-8a95-d87fa81f9821.jpg?v=1758017572",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/WhatsApp_Image_2025-09-30_at_12.03.53_PM_1.jpg?v=1763380450",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/WhatsAppImage2025-09-30at12.03.53PM_2.jpg?v=1763380450"
+      ],
+      "price": "225750.00",
+      "url": "https://askalanyjewellery.com/products/rose-radiance-marquise-bangle",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Skyline Baguette Diamond Bangle",
+      "handle": "skyline-baguette-diamond-bangle",
+      "description": "<p>Inspired by architectural elegance, this gold bangle showcases a bold row of baguette-cut diamonds framed by two fine pavé diamond borders. The structured, linear design evokes strength and modern sophistication, while the delicate chain closure adds a graceful finishing touch. A perfect balance of bold geometry and timeless sparkle.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 1.48 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/4_e1ccaadf-914e-4765-b34e-8572b0d27522.jpg?v=1758017389",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/4_e1ccaadf-914e-4765-b34e-8572b0d27522.jpg?v=1758017389"
+      ],
+      "price": "161700.00",
+      "url": "https://askalanyjewellery.com/products/skyline-baguette-diamond-bangle",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pear Open Diamond Bangle",
+      "handle": "pear-open-diamond-bangle",
+      "description": "<p data-start=\"137\" data-end=\"518\"><em>Modern minimalism meets refined sparkle in the Pear Open Diamond Bangle—a sleek, sculptural piece designed to make a subtle statement. This elegant open bangle features 0.26 carats of round brilliant diamonds and 0.12 carats of baguette-cut diamonds, artfully arranged around pear-shaped motifs that frame the wrist with effortless grace. All our Diamonds are G Color VS Clarity.</em></p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.38 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/47.jpg?v=1742324502",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/47.jpg?v=1742324502"
+      ],
+      "price": "128100.00",
+      "url": "https://askalanyjewellery.com/products/pear-open-diamond-bangle",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Allure Diamond Bangle",
+      "handle": "allure-diamond-bangle",
+      "description": "<p data-start=\"130\" data-end=\"480\"><em>Radiant and captivating, the Allure Diamond Bangle is a perfect harmony of brilliance and elegance. Adorned with 0.99 carats of round brilliant diamonds and 0.92 carats of pear-shaped diamonds, this exquisite piece is designed to wrap the wrist in a luminous, flowing arrangement of sparkle and sophistication. All our Diamonds are G Color VS Clarity.</em></p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 1.91 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>\n<p data-start=\"482\" data-end=\"816\"> </p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/46.jpg?v=1742324475",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/46.jpg?v=1742324475",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/38_8829d8e8-053c-43d8-bf55-6b786ae1a54a.png?v=1758918282"
+      ],
+      "price": "217350.00",
+      "url": "https://askalanyjewellery.com/products/allure-diamond-bangle",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Multi-Shaped Cluster Diamond Bangle",
+      "handle": "multi-shaped-cluster-diamond-bangle",
+      "description": "<p data-start=\"149\" data-end=\"586\"><em>Bold yet refined, the Multi-Shaped Cluster Diamond Bangle is a radiant display of expert craftsmanship and contemporary elegance. This striking piece features a brilliant mix of 0.90 carats of round diamonds, accented by R05 (0.06 carats), pear-shaped diamonds (0.06 carats), and baguette-cut diamonds (0.12 carats)—each carefully arranged in a captivating cluster formation. All our Diamonds are G Color VS Clarit</em><em>y.</em></p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 1.14 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>\n<p data-start=\"588\" data-end=\"873\"> </p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/39_69ed9dda-27e8-4485-b779-131ed3b53741.png?v=1742323944",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/39_69ed9dda-27e8-4485-b779-131ed3b53741.png?v=1742323944",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/IMG_1923.jpg?v=1758916908"
+      ],
+      "price": "166950.00",
+      "url": "https://askalanyjewellery.com/products/multi-shaped-cluster-diamond-bangle",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "0.07 ct Half Tennis Bracelet",
+      "handle": "half-tennis-bracelet",
+      "description": "<p>A timeless symbol of elegance, this tennis bracelet showcases a continuous line of brilliant round-cut diamonds, each expertly set to maximize sparkle and sophistication. Crafted in luminous white gold, it’s designed to drape gracefully around the wrist, secured with a sturdy clasp for everyday comfort and luxury.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.78 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat White Gold</p>\n<p> </p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/41.png?v=1742323723",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/41.png?v=1742323723"
+      ],
+      "price": "96600.00",
+      "url": "https://askalanyjewellery.com/products/half-tennis-bracelet",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Open Pear Bangle",
+      "handle": "the-open-pear-bangle",
+      "description": "<p>A sleek, open-cuff gold bangle designed with soft, flowing curves and accented by two delicate pear-shaped stones. Its minimalist silhouette blends modern elegance with subtle sparkle, making it perfect for everyday wear or special occasions.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.50 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/pearopenbangle.jpg?v=1764857254",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/pearopenbangle.jpg?v=1764857254",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-44.jpg?v=1764591963"
+      ],
+      "price": "82950.00",
+      "url": "https://askalanyjewellery.com/products/the-open-pear-bangle",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Marquise & Pear Golden Glow Bangle",
+      "handle": "marquise-pear-golden-glow-bangle",
+      "description": "<p>A sleek, open-cuff gold bangle designed with soft, flowing curves and accented by two delicate pear-shaped stones. Its minimalist silhouette blends modern elegance with subtle sparkle, making it perfect for everyday wear or special occasions</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.60 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/9_757ee15e-e36e-44cc-86a5-dd47e2765756.jpg?v=1764855981",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/9_757ee15e-e36e-44cc-86a5-dd47e2765756.jpg?v=1764855981",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-43.jpg?v=1764591956",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-40.jpg?v=1764591952",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-42.jpg?v=1764591949"
+      ],
+      "price": "140700.00",
+      "url": "https://askalanyjewellery.com/products/marquise-pear-golden-glow-bangle",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Open Carre Bangle",
+      "handle": "the-open-carre-bangle",
+      "description": "<p>A sleek, open-cuff gold bangle designed with soft, flowing curves and accented by two delicate Emerald-shaped stones. Its minimalist silhouette blends modern elegance with subtle sparkle, making it perfect for everyday wear or special occasions.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.40 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/8_2a8f1c94-60e7-4b23-9b98-09223df65203.jpg?v=1764855882",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/8_2a8f1c94-60e7-4b23-9b98-09223df65203.jpg?v=1764855882"
+      ],
+      "price": "65100.00",
+      "url": "https://askalanyjewellery.com/products/the-open-carre-bangle",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Multi-Shaped Diamond Bangle",
+      "handle": "multi-shaped-diamond-bangle",
+      "description": "<p>A refined gold bangle featuring a continuous row of pear-shaped stones set in a flowing, openwork design. Each stone catches the light with a soft, elegant sparkle, creating a timeless piece that adds effortless sophistication to both everyday and evening looks.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 2.80 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/6_d7922339-251b-4faf-8946-d94046d96632.jpg?v=1764855805",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/6_d7922339-251b-4faf-8946-d94046d96632.jpg?v=1764855805",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-25.jpg?v=1764591964",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-44.jpg?v=1764591963"
+      ],
+      "price": "364350.00",
+      "url": "https://askalanyjewellery.com/products/multi-shaped-diamond-bangle",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Multi-shaped Bezel Bangle",
+      "handle": "multi-shaped-bezel-bangle",
+      "description": "<p>A refined gold bangle featuring a continuous row of pear-shaped stones set in a flowing, openwork design. Each stone catches the light with a soft, elegant sparkle, creating a timeless piece that adds effortless sophistication to both everyday and evening looks.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 2.50 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/5_eefa6f84-6f2e-4909-806d-b547d2c28edb.jpg?v=1764855708",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/5_eefa6f84-6f2e-4909-806d-b547d2c28edb.jpg?v=1764855708",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-42.jpg?v=1764591949",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-43.jpg?v=1764591956",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-40.jpg?v=1764591952"
+      ],
+      "price": "294367.00",
+      "url": "https://askalanyjewellery.com/products/multi-shaped-bezel-bangle",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pear Charm Diamond Bangle",
+      "handle": "pear-charm-diamond-bangle",
+      "description": "<p>A delicate gold bangle adorned with five pear-shaped diamond clusters, each haloed in brilliance. The sleek band allows the diamond motifs to take center stage, offering a refined sparkle that is perfect for layering or wearing alone. A versatile piece that balances minimalism with timeless elegance.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.36 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/496_1_6756c0db-c775-48a1-b25b-4d255733e487.jpg?v=1758019535",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/496_1_6756c0db-c775-48a1-b25b-4d255733e487.jpg?v=1758019535",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/july-20_8f972ed0-38cd-4953-a912-5851c88c8aab.jpg?v=1758703164",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/july-18_7e36e587-756e-4d74-89f6-d2bc5d3452cd.jpg?v=1758703168",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/july-17_94940d91-12d3-4247-a2d2-3466bbd2d8d3.jpg?v=1758703171"
+      ],
+      "price": "88200.00",
+      "url": "https://askalanyjewellery.com/products/pear-charm-diamond-bangle",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pear Golden Glow Bangle",
+      "handle": "teardrop-elegance-bangle",
+      "description": "<p>This graceful bangle highlights a pear-shaped diamond cluster at the center, cradled by polished gold curves. Symbolizing elegance and femininity, it is the perfect piece for refined sophistication.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.52 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/IMG_0087.jpg?v=1758886937",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/IMG_0087.jpg?v=1758886937",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/16.jpg?v=1763377558",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/15_8f0dc8ce-b48e-4fee-9ec9-2ad84818856e.jpg?v=1763378144",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/5f7bf995-eee4-4864-9f40-915ff22f92b0.jpg?v=1763377558"
+      ],
+      "price": "135000.00",
+      "url": "https://askalanyjewellery.com/products/teardrop-elegance-bangle",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Marquise Golden Glow Bangle",
+      "handle": "marquise-glow-golden-bangle",
+      "description": "<p>A sleek gold bangle with a central Marquise-shaped diamond cluster, framed by smooth, flowing curves. A minimal yet striking design that balances simplicity with sparkle.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.38 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/IMG_0088.jpg?v=1758887261",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/IMG_0088.jpg?v=1758887261",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/9fe6038b-04d3-4936-9387-44ef98b3b4f9_87861d81-aca6-4882-a13f-38465d746c8a.jpg?v=1758887261"
+      ],
+      "price": "120000.00",
+      "url": "https://askalanyjewellery.com/products/marquise-glow-golden-bangle",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Royal Emerald & Diamond Earrings",
+      "handle": "royal-emerald-diamond-earrings",
+      "description": "",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/29.jpg?v=1742220053",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/29.jpg?v=1742220053"
+      ],
+      "price": "0.00",
+      "url": "https://askalanyjewellery.com/products/royal-emerald-diamond-earrings",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Petal Cascade Earrings",
+      "handle": "petal-cascade-earrings",
+      "description": "<p>Inspired by the gentle beauty of nature, the Bloom Earrings feature marquise-cut stones arranged like delicate petals cascading gracefully. Their feminine silhouette and refined sparkle make them perfect for both special occasions and modern everyday elegance.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 1.51 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/690_bd96cf24-d818-491d-ac5b-8e7a04e5f783.jpg?v=1761575330",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/690_bd96cf24-d818-491d-ac5b-8e7a04e5f783.jpg?v=1761575330",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-19.jpg?v=1764592002",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-18.jpg?v=1764592002"
+      ],
+      "price": "143850.00",
+      "url": "https://askalanyjewellery.com/products/petal-cascade-earrings",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Golden Oval Diamond Drops",
+      "handle": "golden-oval-diamond-drops",
+      "description": "<p><span style=\"font-size: 0.875rem;\">Sculpted in 18K yellow gold, these sleek hoops feature a flowing wave design that cradles a cluster of dazzling round diamonds. The modern curvature gives a bold yet refined silhouette, perfect for day-to-night elegance.</span><br></p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around  0.52 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/611.jpg?v=1759835727",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/611.jpg?v=1759835727"
+      ],
+      "price": "81900.00",
+      "url": "https://askalanyjewellery.com/products/golden-oval-diamond-drops",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Golden Wave Diamond Hoops",
+      "handle": "golden-wave-diamond-hoops",
+      "description": "<p><span style=\"font-size: 0.875rem;\">Sculpted in 18K yellow gold, these sleek hoops feature a flowing wave design that cradles a cluster of dazzling round diamonds. The modern curvature gives a bold yet refined silhouette, perfect for day-to-night elegance.</span><br></p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around  0.63 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/IMG_0097.jpg?v=1758890061",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/IMG_0097.jpg?v=1758890061",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/12_3355a64a-d063-4ef1-b4c8-54e30fa68bf8.jpg?v=1763379838",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/askalanypictures-198.jpg?v=1763379838",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/17d10238-f250-42b1-8acb-52e47aaa64a8.jpg?v=1763379838"
+      ],
+      "price": "97650.00",
+      "url": "https://askalanyjewellery.com/products/golden-wave-diamond-hoops",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Diamond Hoops",
+      "handle": "diamond-hoops",
+      "description": "<p data-start=\"137\" data-end=\"417\">Add effortless sophistication to your look with our Diamond Hoops, featuring a total of 1.19 carats of dazzling round-cut diamonds (R5). Each stone is meticulously set to enhance its brilliance, creating a continuous line of sparkle that catches the light with every turn.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: 1.19 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>\n<p data-start=\"419\" data-end=\"685\"> </p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/24B.png?v=1742219826",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/24B.png?v=1742219826",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/askalanypictures-272.jpg?v=1763380517",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/askalanypictures-280.jpg?v=1763380528"
+      ],
+      "price": "109200.00",
+      "url": "https://askalanyjewellery.com/products/diamond-hoops",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Emerald-Shaped Diamond Earrings",
+      "handle": "emerald-shaped-diamond-earrings",
+      "description": "<p data-start=\"189\" data-end=\"571\">Striking in silhouette and timeless in style, our Emerald-Shaped Diamond Earrings are a refined statement of elegance. Designed to captivate, each earring features a stunning arrangement of<strong> </strong>0.44 carats of round-cut diamonds (R) and<strong> </strong>0.32 carats of brilliant-cut diamonds (B), meticulously set to enhance the clean lines and elongated shape of the emerald-inspired design. </p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.76 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat White Gold</p>\n<p data-start=\"573\" data-end=\"845\"> </p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/22.png?v=1742219523",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/22.png?v=1742219523"
+      ],
+      "price": "80850.00",
+      "url": "https://askalanyjewellery.com/products/emerald-shaped-diamond-earrings",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Square-Shaped Diamond Hoops",
+      "handle": "square-shaped-diamond-hoops",
+      "description": "<p>Bold yet elegant, these square-shaped diamond hoops are designed to make a statement. Featuring a sleek hoop that gracefully suspends a dazzling square diamond cluster drop, they combine modern geometry with timeless sparkle. The refined silhouette and brilliant shine make them the perfect piece to elevate both day and evening looks.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.47 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat White Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/17B.png?v=1742219450",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/17B.png?v=1742219450",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/5A6BF243-3195-4DA8-B5C2-B6B9FDE634C7.jpg?v=1769881535"
+      ],
+      "price": "56700.00",
+      "url": "https://askalanyjewellery.com/products/square-shaped-diamond-hoops",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Classic Studs (0.20)",
+      "handle": "classic-studs-0-20",
+      "description": "<p data-start=\"31\" data-end=\"412\">A timeless pair of diamond studs set in polished yellow gold, designed to embody effortless elegance. Each stone is carefully selected for its brilliance, offering a clean and refined sparkle that elevates both everyday wear and formal looks. Understated yet essential, this classic silhouette is a staple in any fine jewellery collection—quietly luxurious and endlessly versatile.</p>\n<p data-start=\"414\" data-end=\"434\"><strong data-start=\"414\" data-end=\"434\">Product Details:</strong></p>\n<p data-start=\"436\" data-end=\"510\" data-is-last-node=\"\" data-is-only-node=\"\">Diamond Weight: Around 0.38 Carats<br data-start=\"470\" data-end=\"473\">Diamond Quality: G color / VS Clarity</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/20sstud.jpg?v=1775575575",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/20sstud.jpg?v=1775575575"
+      ],
+      "price": "39000.00",
+      "url": "https://askalanyjewellery.com/products/classic-studs-0-20",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Duo Radiance Hoops",
+      "handle": "duo-radiance-hoops",
+      "description": "<p data-start=\"2649\" data-end=\"3021\">A modern interpretation of the classic hoop, designed with a dual-layered silhouette. One layer is delicately pavé-set with brilliant diamonds, while the other remains in polished gold, creating a striking contrast. A single diamond accent sits at the top, acting as a luminous focal point. Sophisticated and versatile, this pair blends structure with understated sparkle.</p>\n<p data-start=\"3023\" data-end=\"3043\"><strong data-start=\"3023\" data-end=\"3043\">Product Details:</strong></p>\n<p data-start=\"3045\" data-end=\"3121\">Diamond Weight: Around 0.47 Carats<br data-start=\"3079\" data-end=\"3082\">Diamond Quality: G color / VS Clarity</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/tworowsearrings.jpg?v=1775575404",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/tworowsearrings.jpg?v=1775575404"
+      ],
+      "price": "63000.00",
+      "url": "https://askalanyjewellery.com/products/duo-radiance-hoops",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Marquise Multi-Shaped Hoops",
+      "handle": "marquise-multi-shaped-hoops",
+      "description": "<p data-start=\"2190\" data-end=\"2511\">A refined pair of gold hoops adorned with an interplay of round and marquise-cut diamonds. The alternating shapes introduce movement and visual intrigue, creating a dynamic sparkle that shifts with every turn. Elegant yet distinctive, these hoops elevate everyday wear with a subtle statement of craftsmanship and design.</p>\n<p data-start=\"2513\" data-end=\"2533\"><strong data-start=\"2513\" data-end=\"2533\">Product Details:</strong></p>\n<p data-start=\"2535\" data-end=\"2611\">Diamond Weight: Around 0.67 Carats<br data-start=\"2569\" data-end=\"2572\">Diamond Quality: G color / VS Clarity</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/multishapedhoops.jpg?v=1775575284",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/multishapedhoops.jpg?v=1775575284"
+      ],
+      "price": "70000.00",
+      "url": "https://askalanyjewellery.com/products/marquise-multi-shaped-hoops",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Celestial Vine Ear Climbers",
+      "handle": "celestial-vine-ear-climbers",
+      "description": "<p>An elegant pair of yellow gold ear climbers designed to trace the natural curve of the ear. Featuring a delicate vine-like silhouette, the design blends brilliant round diamonds with sleek baguette cuts, creating depth, movement, and refined sparkle. The cascading arrangement feels light yet luxurious, offering a modern statement with a soft, feminine touch—perfect for evening wear, special occasions, or elevating a minimal look with subtle drama.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 2.08 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/4_jpg.jpg?v=1769428857",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/4_jpg.jpg?v=1769428857"
+      ],
+      "price": "164850.00",
+      "url": "https://askalanyjewellery.com/products/celestial-vine-ear-climbers",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cascading Dewdrop Earrings",
+      "handle": "cascading-dewdrop-earrings",
+      "description": "<p>Elegant drop earrings crafted with a fluid cascade of pear-shaped cubic zirconia stones, delicately linked to create graceful movement and brilliant sparkle. Their refined waterfall design makes them the perfect statement piece — sophisticated enough for evening wear, yet timeless for any special occasion.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 1.50 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat White Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/702_1.jpg?v=1761821874",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/702_1.jpg?v=1761821874",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/21_a3406649-6193-4c3c-a8b8-41a42e6fff8f.jpg?v=1763377078",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/askalanypictures-93.jpg?v=1763377126"
+      ],
+      "price": "238350.00",
+      "url": "https://askalanyjewellery.com/products/cascading-dewdrop-earrings",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Radiant Duo Hoops",
+      "handle": "radiant-duo-hoops",
+      "description": "<p>Refined and timeless, the Radiant Duo Hoops feature two parallel rows of shimmering stones that deliver a clean, sophisticated sparkle. Perfect for everyday wear or styled with evening pieces, these hoops are a modern jewelry essential.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 2.06 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat White Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/679.jpg?v=1761575050",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/679.jpg?v=1761575050",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-1.jpg?v=1764592004"
+      ],
+      "price": "151200.00",
+      "url": "https://askalanyjewellery.com/products/radiant-duo-hoops",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Imperial Drop Earrings",
+      "handle": "imperial-drop-earrings",
+      "description": "<p>A bold statement of refined glamour, the Imperial Drop Earrings feature a stunning geometric design combining square halos and round brilliant stones in a cascading silhouette. Perfectly balanced between classic and contemporary, these earrings bring royal charm to any evening look.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 1.48 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat White Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/688.jpg?v=1761648826",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/688.jpg?v=1761648826",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-20.jpg?v=1764592000"
+      ],
+      "price": "131250.00",
+      "url": "https://askalanyjewellery.com/products/imperial-drop-earrings",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Infinity Spark Earrings",
+      "handle": "infinity-spark-earrings",
+      "description": "<p>A timeless classic reimagined with dazzling brilliance. The Eternal Halo Studs feature a radiant circular design with double halo stones that reflect light beautifully from every angle. A luxurious essential designed to elevate your everyday elegance or special occasion look.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 2.93 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat White Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/693.jpg?v=1761648900",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/693.jpg?v=1761648900",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-13.jpg?v=1764592005"
+      ],
+      "price": "172200.00",
+      "url": "https://askalanyjewellery.com/products/infinity-spark-earrings",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Timeless Pear Earrings",
+      "handle": "timeless-pear-earrings",
+      "description": "<p>A classic symbol of refined beauty, the Aurora Teardrop Earrings feature a pear-shaped silhouette surrounded by a double halo of radiant stones. Designed to shine from every angle, this piece adds graceful sparkle to evening wear and special occasions.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.34 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/697.png?v=1761573909",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/697.png?v=1761573909",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-14.jpg?v=1764595180",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-15.jpg?v=1764595180"
+      ],
+      "price": "47250.00",
+      "url": "https://askalanyjewellery.com/products/timeless-pear-earrings",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Golden Radiance Diamond Drops",
+      "handle": "golden-radiance-diamond-drops",
+      "description": "<p><span style=\"font-size: 0.875rem;\">Sculpted in 18K yellow gold, these sleek hoops feature a flowing wave design that cradles a cluster of dazzling round diamonds. The modern curvature gives a bold yet refined silhouette, perfect for day-to-night elegance.</span><br></p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around  0.56 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/608.jpg?v=1759835931",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/608.jpg?v=1759835931"
+      ],
+      "price": "85050.00",
+      "url": "https://askalanyjewellery.com/products/golden-radiance-diamond-drops",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rose Sunburst Earrings",
+      "handle": "rose-sunburst-hoop-earrings",
+      "description": "<p>Crafted in 18K yellow gold, these striking hoop-style earrings feature a radiant sunburst pattern of tapered baguette and round stones, fanning outward in a bold and glamorous design. Their open crescent silhouette creates a modern twist on the classic hoop, offering maximum sparkle and standout style. Perfect for special occasions, they’re designed to turn heads.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 3.60 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Rose Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/468_1.jpg?v=1758193309",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/468_1.jpg?v=1758193309",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-39.jpg?v=1764591999"
+      ],
+      "price": "248850.00",
+      "url": "https://askalanyjewellery.com/products/rose-sunburst-hoop-earrings",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pear & Emerald Halo Drop Earrings",
+      "handle": "pear-emerald-halo-drop-earrings",
+      "description": "<p>These dazzling drop earrings feature a pear-shaped halo top leading into an emerald-cut halo drop, both encrusted with brilliant diamonds. The dual-shape design offers a balance of elegance and modernity, with each element catching the light from every angle. Perfect for evening wear, they bring a sophisticated sparkle to any look.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 1.33 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat White Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/456.jpg?v=1758193148",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/456.jpg?v=1758193148",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/july-65.jpg?v=1758623755",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/july-59_0e4d990d-7a91-4861-a569-c6cce5c31877.jpg?v=1758623762",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/july-60.jpg?v=1758623765"
+      ],
+      "price": "129150.00",
+      "url": "https://askalanyjewellery.com/products/pear-emerald-halo-drop-earrings",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Emerald Illusion Diamond Drop Earrings",
+      "handle": "emerald-illusion-diamond-drop-earrings",
+      "description": "<p>Modern and refined, these diamond drop earrings feature a geometric three-part design with baguette-cut stones framed by round brilliant halos. The emerald-shaped drops are linked with a diamond accent, creating movement and light play with every step. Sleek yet striking, they’re the perfect blend of contemporary glamour and timeless sophistication.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 1.50 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat White Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/459.jpg?v=1758193033",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/459.jpg?v=1758193033",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/july-74.jpg?v=1758622600",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/july-67.jpg?v=1758623050",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/july-73.jpg?v=1758623055"
+      ],
+      "price": "128100.00",
+      "url": "https://askalanyjewellery.com/products/emerald-illusion-diamond-drop-earrings",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bezel Drop Necklace",
+      "handle": "bezel-drop-necklace",
+      "description": "<p data-start=\"96\" data-end=\"455\">The Bezel Drop Necklace is the perfect embodiment of refined sparkle and modern simplicity, designed to highlight the natural beauty of mixed-cut diamonds. Featuring princess, marquise, and pear-cut diamonds arranged in a round-to-pear bezel cluster, this pendant captures the essence of delicate sophistication with its clean lines and timeless shine.</p>\n<p data-start=\"457\" data-end=\"479\"><strong data-start=\"457\" data-end=\"477\">Product Details:</strong></p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.50 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/ROUND_PEARPENDANT.jpg?v=1764595885",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/ROUND_PEARPENDANT.jpg?v=1764595885",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-54.jpg?v=1764592004",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-52.jpg?v=1764596656"
+      ],
+      "price": "56700.00",
+      "url": "https://askalanyjewellery.com/products/bezel-drop-necklace",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Golden Bloom Diamond Necklace",
+      "handle": "golden-bloom-diamond-necklace",
+      "description": "<p>Delicately crafted in 18K yellow gold, this necklace features clusters of round brilliant diamonds arranged like blooming petals along a fine chain. With a total diamond weight of approximately 1.67 carats in G color / VS clarity, it radiates refined sparkle and elegance. A graceful piece that adds timeless charm to both everyday sophistication and special occasions<br>Product Details:</p>\n<p>Diamond Weight: Around  2.12 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/5346273b-a759-45e5-9fce-dc9273293f9a.jpg?v=1758969911",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/5346273b-a759-45e5-9fce-dc9273293f9a.jpg?v=1758969911",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/WhatsApp_Image_2025-09-30_at_12.03.50_PM_2.jpg?v=1759223529",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/WhatsApp_Image_2025-09-30_at_12.08.53_PM.jpg?v=1759223533"
+      ],
+      "price": "143850.00",
+      "url": "https://askalanyjewellery.com/products/golden-bloom-diamond-necklace",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tennis Fringe Necklace",
+      "handle": "tennis-fringe-necklace",
+      "description": "<p>Crafted in 18 karat yellow gold, this exquisite necklace features a continuous line of brilliant round diamonds, each delicately set in a fringe-inspired design that cascades with radiant sparkle. The elegant symmetry and refined craftsmanship make this piece a true statement of timeless luxury, perfect for elevating both formal and evening looks.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 1.18 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/IMG_0092.jpg?v=1758887676",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/IMG_0092.jpg?v=1758887676",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/13_189cc039-7ed0-437b-ab0e-449735e3658c.jpg?v=1763378358",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/14_94ce560b-cc18-4723-b528-5dd853f60a10.jpg?v=1763378358",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/2.png?v=1763378358",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/WhatsAppImage2025-09-30at12.03.49PM.jpg?v=1764855412"
+      ],
+      "price": "122000.00",
+      "url": "https://askalanyjewellery.com/products/tennis-fringe-necklace",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dégradé Glow Necklace",
+      "handle": "degrade-glow-necklace",
+      "description": "<p><span>Delicate and graceful, this necklace is crafted in 18 karat yellow gold and adorned with a series of shimmering diamond drops that create a garland-like effect along the neckline. Each diamond is carefully set to catch the light, giving the piece a radiant sparkle with every movement. Lightweight yet luxurious, it’s the perfect blend of timeless elegance and modern charm.</span></p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.90 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/3_1fd47098-b83d-459d-ab5a-b83591f6eb51.jpg?v=1764855657",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/3_1fd47098-b83d-459d-ab5a-b83591f6eb51.jpg?v=1764855657"
+      ],
+      "price": "90300.00",
+      "url": "https://askalanyjewellery.com/products/degrade-glow-necklace",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Flower Drop Necklace",
+      "handle": "flower-drop-necklace",
+      "description": "<p>A delicate 18K gold necklace featuring a dainty floral motif gracefully connected to a single teardrop charm, both adorned with shimmering cubic zirconia stones. The vertical drop design adds an elegant touch of movement and sparkle — perfect for layering or wearing solo for a refined, feminine look.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.34 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/584.jpg?v=1761821382",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/584.jpg?v=1761821382",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-36.jpg?v=1764591976",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-37.jpg?v=1764591967",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-35.jpg?v=1764591974"
+      ],
+      "price": "39900.00",
+      "url": "https://askalanyjewellery.com/products/flower-drop-necklace",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Emerald Cut Diamond Necklace",
+      "handle": "emerald-cut-diamond-necklace",
+      "description": "<p data-end=\"580\" data-start=\"132\"><em>Elegant and understated, the Emerald Cut Diamond Necklace brings together classic design with modern finesse. Centered around the timeless allure of emerald-inspired geometry, this piece features a refined arrangement of baguette-cut diamonds (0.06 &amp; 0.04 carats), round brilliant diamonds (0.12 carats), and pear-shaped diamonds (0.08 carats)—each chosen for its clarity, brilliance, and balance. </em></p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.30 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat White Gold</p>\n<p data-end=\"885\" data-start=\"582\"> </p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/32.png?v=1742218420",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/32.png?v=1742218420"
+      ],
+      "price": "60900.00",
+      "url": "https://askalanyjewellery.com/products/emerald-cut-diamond-necklace",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Teardrop Elegance Diamond Necklace",
+      "handle": "teardrop-elegance-diamond-necklace",
+      "description": "<p>Refined and radiant, this necklace is crafted in 18 karat yellow gold and features an exquisite arrangement of diamond clusters in alternating shapes. The centerpiece showcases a graceful double teardrop design, framed with shimmering pavé diamonds that capture light from every angle. With its elegant flow and sparkling brilliance, this necklace is the perfect expression of timeless luxury.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 3.30 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/678.jpg?v=1761574237",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/678.jpg?v=1761574237",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/35a79539-53af-4385-a3e0-d544ad53c7d8.jpg?v=1761574237",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/5272632b-7fa9-48f8-9e08-5fd7f48dcfb7.jpg?v=1761574237"
+      ],
+      "price": "269850.00",
+      "url": "https://askalanyjewellery.com/products/teardrop-elegance-diamond-necklace",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Diamond Garland Necklace",
+      "handle": "diamond-garland-necklace",
+      "description": "<p>Delicate and graceful, this necklace is crafted in 18 karat yellow gold and adorned with a series of shimmering diamond drops that create a garland-like effect along the neckline. Each diamond is carefully set to catch the light, giving the piece a radiant sparkle with every movement. Lightweight yet luxurious, it’s the perfect blend of timeless elegance and modern charm.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 1.37 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/IMG_1901.png?v=1758887809",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/IMG_1901.png?v=1758887809",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/DSCF3505.jpg?v=1758918384"
+      ],
+      "price": "143850.00",
+      "url": "https://askalanyjewellery.com/products/diamond-garland-necklace",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tiered Flower Necklace",
+      "handle": "tiered-flower-necklace",
+      "description": "",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/11_2cb2a1ce-b02d-451a-ae63-9fa661c57061.jpg?v=1750069564",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/11_2cb2a1ce-b02d-451a-ae63-9fa661c57061.jpg?v=1750069564"
+      ],
+      "price": "59850.00",
+      "url": "https://askalanyjewellery.com/products/tiered-flower-necklace",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Abstract Diamond Necklace",
+      "handle": "abstract-diamond-necklace",
+      "description": "<p data-start=\"133\" data-end=\"480\"><em>Artful and expressive, the Abstract Diamond Necklace blends modern design with timeless brilliance. Featuring an imaginative arrangement of 1.48 carats of round brilliant diamonds and 0.43 carats of baguette-cut diamonds, this piece plays with shape and symmetry to create a striking, sculptural effect.</em></p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 2.50 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>\n<p data-start=\"482\" data-end=\"790\"> </p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/24_43f524aa-47d3-44e2-b0f8-76744074764e.jpg?v=1758027976",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/24_43f524aa-47d3-44e2-b0f8-76744074764e.jpg?v=1758027976",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/IMG_1924.jpg?v=1758917102",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/DSCF3505.jpg?v=1758918384"
+      ],
+      "price": "199000.00",
+      "url": "https://askalanyjewellery.com/products/abstract-diamond-necklace",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dégradé Diamond Pendant",
+      "handle": "degrade-diamond-pendant",
+      "description": "<p data-start=\"130\" data-end=\"539\"><em>Subtle elegance meets timeless brilliance in the Dégradé Diamond Pendant, a graceful piece designed to illuminate your every moment. This pendant features a beautifully tapered arrangement of round brilliant diamonds totaling 0.07 carats, R05 diamonds totaling 0.32 carats, and R10 diamonds at 0.10 carats, all delicately set to create a cascading dégradé effect. </em></p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.54 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>\n<p data-start=\"541\" data-end=\"812\"> </p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/29.png?v=1742218219",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/29.png?v=1742218219"
+      ],
+      "price": "55650.00",
+      "url": "https://askalanyjewellery.com/products/degrade-diamond-pendant",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Asymmetrical Flow Diamond Necklace",
+      "handle": "asymmetrical-flow-diamond-necklace",
+      "description": "<p data-start=\"140\" data-end=\"484\"><em>Modern elegance meets effortless movement in the Asymmetrical Flow Diamond Necklace. Designed with a subtle yet striking imbalance, this piece features 0.58 carats of round brilliant diamonds gracefully arranged to create a flowing, organic silhouette that drapes beautifully along the neckline. All our Diamonds are G Color VS Clarity.</em></p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.58 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>\n<p data-start=\"486\" data-end=\"748\"> </p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/14.jpg?v=1742217053",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/14.jpg?v=1742217053",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/11.png?v=1758708340",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/13_a046753d-a810-4904-a635-3c2c86bd66b9.png?v=1758708343",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/12_c4c57f52-13d9-44c2-aa00-cee650635c41.png?v=1758708346"
+      ],
+      "price": "73698.00",
+      "url": "https://askalanyjewellery.com/products/asymmetrical-flow-diamond-necklace",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tennis Necklace Chain 0.04",
+      "handle": "tennis-necklace-chain-0-04",
+      "description": "<p data-start=\"122\" data-end=\"408\"><em>A true icon of elegance, the Tennis Necklace is the epitome of refined simplicity and enduring style. Featuring a seamless row of R5 round brilliant diamonds totaling 1.98 carats, this necklace offers a continuous shimmer that gracefully hugs the neckline.</em></p>\n<p data-start=\"122\" data-end=\"408\">Product Details:</p>\n<p>Diamond Weight: Around 1.98 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat White Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/ChainTennis5swhite.jpg?v=1776172372",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/ChainTennis5swhite.jpg?v=1776172372"
+      ],
+      "price": "187000.00",
+      "url": "https://askalanyjewellery.com/products/tennis-necklace-chain-0-04",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dangling Pear Tria Necklace",
+      "handle": "dangling-pear-tria-necklace",
+      "description": "<p data-start=\"87\" data-end=\"544\">A delicate necklace in yellow gold, designed with a graceful sequence of movement and light. At its center, a fine arrangement of geometric brilliance unfolds—pairing a sharp triangular diamond with softly suspended pear-shaped drops. The contrast of structure and fluidity creates a refined rhythm, allowing each element to catch the light independently. Elegant and distinctive, this piece offers a modern expression of femininity with a subtle statement.</p>\n<p data-start=\"546\" data-end=\"566\"><strong data-start=\"546\" data-end=\"566\">Product Details:</strong></p>\n<p data-start=\"568\" data-end=\"644\">Diamond Weight: Around 0.95 Carats<br data-start=\"602\" data-end=\"605\">Diamond Quality: G color / VS Clarity</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/DSC0497.jpg?v=1775575632",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/DSC0497.jpg?v=1775575632"
+      ],
+      "price": "81000.00",
+      "url": "https://askalanyjewellery.com/products/dangling-pear-tria-necklace",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pear Multi-shaped Necklace",
+      "handle": "pear-multi-shaped-necklace",
+      "description": "<p>A refined diamond necklace crafted in yellow gold, featuring a graceful sequence of pear-shaped diamonds set tip-to-tip along the neckline. Each pear stone is delicately linked to create a fluid, continuous flow that enhances brilliance and movement. The design is timeless yet modern, offering a soft, feminine sparkle that sits beautifully on the collarbone—perfect for bridal wear, evening elegance, or elevated everyday luxury.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 3.26 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/3.JPG_1.jpg?v=1769429182",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/3.JPG_1.jpg?v=1769429182"
+      ],
+      "price": "270000.00",
+      "url": "https://askalanyjewellery.com/products/pear-multi-shaped-necklace",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dangling Diamond Droplet Necklace",
+      "handle": "dangling-diamond-droplet",
+      "description": "<p><span>Delicate and graceful, this necklace is crafted in 18 karat yellow gold and adorned with a series of shimmering diamond drops that create a garland-like effect along the neckline. Each diamond is carefully set to catch the light, giving the piece a radiant sparkle with every movement. Lightweight yet luxurious, it’s the perfect blend of timeless elegance and modern charm.</span></p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 1.90 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/2_b683c23a-35c3-4405-a530-bfe81d358b17.jpg?v=1764855619",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/2_b683c23a-35c3-4405-a530-bfe81d358b17.jpg?v=1764855619"
+      ],
+      "price": "175000.00",
+      "url": "https://askalanyjewellery.com/products/dangling-diamond-droplet",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Marquise Raindrop Necklace",
+      "handle": "the-marquise-raindrop-necklace",
+      "description": "<p><span>Delicately crafted in 18K yellow gold, this necklace features clusters of round brilliant diamonds arranged like blooming petals along a fine chain. With a total diamond weight of approximately 1.65 carats in G color / VS clarity, it radiates refined sparkle and elegance. A graceful piece that adds timeless charm to both everyday sophistication and special occasions.</span></p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around  1.65 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/4_2892e6f1-a8e0-41cb-b28e-c1f248d65667.jpg?v=1764855682",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/4_2892e6f1-a8e0-41cb-b28e-c1f248d65667.jpg?v=1764855682",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-36.jpg?v=1764591976",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-45.jpg?v=1764591974",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-37.jpg?v=1764591967"
+      ],
+      "price": "149100.00",
+      "url": "https://askalanyjewellery.com/products/the-marquise-raindrop-necklace",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Serpentina Necklace",
+      "handle": "the-serpentina-necklace",
+      "description": "<p>Indulge in timeless sophistication with the Cascade Necklace. Designed with a graceful flowing line of shimmering stones, this piece captures light from every angle, creating a refined statement of elegance. Crafted to complement both evening glamour and modern minimalism, it is the definition of effortless luxury.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 1.50 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>\n<p> </p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/DSC0323.jpg?v=1761573964",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/DSC0323.jpg?v=1761573964",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-46.jpg?v=1764595263",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-47.jpg?v=1764595263",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-48.jpg?v=1764595263"
+      ],
+      "price": "133350.00",
+      "url": "https://askalanyjewellery.com/products/the-serpentina-necklace",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Marquise Royale Necklace",
+      "handle": "marquise-royale-necklace",
+      "description": "<p><span style=\"font-size: 0.875rem;\">A timeless masterpiece crafted in 18K white gold, this necklace features a Delicate Marquise &amp; Round diamonds, each positioned for the most elegant shape and maximum radiance. The graceful design adds a touch of sophistication, capturing the perfect balance of brilliance and elegance. An exquisite choice for evening wear and unforgettable moments.</span></p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around  5.98 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat White Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/DSC0060.jpg?v=1761573858",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/DSC0060.jpg?v=1761573858",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/8.png?v=1761573858",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/11_42ff1035-06c0-4ea6-b311-df34db72c412.png?v=1761573858",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/6_47d5f0dd-104e-4e6f-b770-308b6fc51f45.png?v=1761573858"
+      ],
+      "price": "521850.00",
+      "url": "https://askalanyjewellery.com/products/marquise-royale-necklace",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Layered Round & Pear Bezel Necklace",
+      "handle": "layered-round-pear-bezel-necklace",
+      "description": "<p><span>Graceful and luminous, this necklace is crafted in 18 karat yellow gold and adorned with delicate Round and Pear shaped diamond clusters linked in a rhythmic pattern. Each cluster sparkles with brilliance, creating a celestial-inspired design that feels both modern and timeless. Lightweight yet striking, this necklace adds a touch of radiance to any look, whether worn alone or layered with other pieces.</span></p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.45 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/221.jpg?v=1759919774",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/221.jpg?v=1759919774",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-56.jpg?v=1764595298",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-55.jpg?v=1764595298"
+      ],
+      "price": "77000.00",
+      "url": "https://askalanyjewellery.com/products/layered-round-pear-bezel-necklace",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Celeste Embrace Ring",
+      "handle": "celeste-embrace-ring",
+      "description": "<p>A sculptural yellow gold ring featuring two softly curved bands that meet at the center, adorned with clusters of brilliant-cut diamonds. The design creates a blooming effect, with diamonds flowing organically across the surface, offering dimension, movement, and a luxurious contrast between textured gold and radiant sparkle.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.34 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/1_0493a1f2-8b24-4e75-9a4a-f9c58329d7e0.jpg?v=1769440119",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/1_0493a1f2-8b24-4e75-9a4a-f9c58329d7e0.jpg?v=1769440119"
+      ],
+      "price": "83000.00",
+      "url": "https://askalanyjewellery.com/products/celeste-embrace-ring",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Marquise And Pear Diamond Open Ring",
+      "handle": "marquise-and-pear-diamond-open-ring",
+      "description": "<p class=\"\" data-end=\"648\" data-start=\"272\">A stunning showcase of dynamic beauty, the Marquise and Pear Diamond Open Ring fuses classic and contemporary design into a truly captivating piece. This exquisite ring features a total of 1.88 carats of diamonds, including four expertly cut marquise diamonds and four graceful pear-shaped diamonds, each placed with precision to create an open, flowing silhouette.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 2.00 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat White Gold</p>\n<p> </p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/4.jpg?v=1742221151",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/4.jpg?v=1742221151",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/30_8dde2960-7e3b-4250-9942-30d7d21cb7dc.jpg?v=1763378827",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/35_d0016a01-4d4f-4d74-9b0c-faac172cbdfe.jpg?v=1763378867",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/2.png?v=1763378358"
+      ],
+      "price": "0.00",
+      "url": "https://askalanyjewellery.com/products/marquise-and-pear-diamond-open-ring",
+      "options": [
+        {
+          "name": "Color",
+          "values": [
+            "Gold",
+            "White Gold"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Abstract Parallel Diamond Ring",
+      "handle": "abstract-parallel-diamond-ring",
+      "description": "<p>A true work of art, the <strong data-start=\"215\" data-end=\"249\">Abstract Parallel Diamond Ring</strong> seamlessly blends geometric elegance with modern design. This striking piece features 0.20 carats of radiant round diamonds (R), 0.04 carats of delicate round diamonds (R05), and a bold 0.31 carats of round diamonds (R), arranged in parallel formations to create a unique and captivating visual flow. Our Diamonds are G Color VS Clarity.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.55 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/12_f0651891-513d-416b-aaa1-322e1f29d071.png?v=1742322722",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/12_f0651891-513d-416b-aaa1-322e1f29d071.png?v=1742322722",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-24.jpg?v=1764591976"
+      ],
+      "price": "73500.00",
+      "url": "https://askalanyjewellery.com/products/abstract-parallel-diamond-ring",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Abstract Marquise Band",
+      "handle": "abstract-marquise-band",
+      "description": "<div class=\"text-base my-auto mx-auto pb-10 [--thread-content-margin:--spacing(4)] @w-sm/main:[--thread-content-margin:--spacing(6)] @w-lg/main:[--thread-content-margin:--spacing(16)] px-(--thread-content-margin)\">\n<div class=\"[--thread-content-max-width:40rem] @w-lg/main:[--thread-content-max-width:48rem] mx-auto max-w-(--thread-content-max-width) flex-1 group/turn-messages focus-visible:outline-hidden relative flex w-full min-w-0 flex-col agent-turn\" tabindex=\"-1\">\n<div class=\"flex max-w-full flex-col grow\">\n<div data-message-model-slug=\"gpt-5-2\" class=\"min-h-8 text-message relative flex w-full flex-col items-end gap-2 text-start break-words whitespace-normal [.text-message+&amp;]:mt-1\" dir=\"auto\" data-message-id=\"5c5fbac5-619e-48af-ac1f-05f6f8db7c9e\" data-message-author-role=\"assistant\">\n<div class=\"flex w-full flex-col gap-1 empty:hidden first:pt-[1px]\">\n<div class=\"markdown prose dark:prose-invert w-full wrap-break-word dark markdown-new-styling\">\n<p data-is-only-node=\"\" data-is-last-node=\"\" data-end=\"604\" data-start=\"0\">An elegant thick yellow gold band sculpted with a rich, tactile texture and an organic abstract silhouette. The design is punctuated by marquise and round brilliant diamonds, arranged in a fluid composition that creates a subtle opening within the gold—adding depth, contrast, and quiet intrigue. The interplay between polished gold and shimmering diamonds gives the piece a sense of movement and modern artistry. Bold yet refined, it feels effortlessly luxurious, making it ideal for evening wear, special occasions, or as a distinctive statement that elevates an everyday look with sculptural elegance.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.27 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/afdbet.png?v=1771337901",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/afdbet.png?v=1771337901"
+      ],
+      "price": "64050.00",
+      "url": "https://askalanyjewellery.com/products/abstract-marquise-band",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Round Bold Ring",
+      "handle": "round-bold-ring",
+      "description": "<p>Sleek, striking, and full of character, the Round Bold Ring combines refined design with bold elegance. This distinctive piece features 0.14 carats of brilliant round diamonds (R) complemented by a 0.06-carat pear-shaped diamond (PR), creating a dynamic contrast of shapes that adds depth and sophistication to the design. Our Diamonds are G color VS Clarity.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.20 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>\n<p> </p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/23.png?v=1742323623",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/23.png?v=1742323623"
+      ],
+      "price": "45150.00",
+      "url": "https://askalanyjewellery.com/products/round-bold-ring",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Radiant Flow Diamond Open Ring",
+      "handle": "radiant-flow-diamond-open-ring",
+      "description": "<p>The Radiant Flow Diamond Open Ring is the perfect embodiment of elegance and simplicity, designed to highlight the natural beauty of diamonds. Featuring 0.38 carats of brilliant round diamonds (R5), this open-band ring captures the essence of modern sophistication with its clean lines and timeless sparkle. </p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.38 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>\n<p> </p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/8.jpg?v=1742221409",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/8.jpg?v=1742221409",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-24.jpg?v=1764591976"
+      ],
+      "price": "56700.00",
+      "url": "https://askalanyjewellery.com/products/radiant-flow-diamond-open-ring",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Diamond And Ruby Pear Open Ring",
+      "handle": "diamond-and-ruby-pear-open-ring",
+      "description": "<p data-start=\"252\" data-end=\"620\" class=\"\">A vibrant expression of modern elegance, the Diamond and Ruby Pear Open Ring blends fiery color with refined sparkle. This unique open-band design features a total of 1.13 carats, including 0.22 carats of brilliant round diamonds and an exquisite mix of marquise (0.08 ct), pear (0.02 ct), and pointed oval (0.05 ct) diamond cuts, creating dynamic texture and shimmer.</p>\n<p data-start=\"622\" data-end=\"875\" class=\"\">At its heart lies 0.76 carats of richly colored rubies, thoughtfully placed to contrast the white diamonds with warmth and intensity.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.37 Carats</p>\n<p>Ruby Weight: Around 0.76 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>\n<p> </p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/5.jpg?v=1742221192",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/5.jpg?v=1742221192"
+      ],
+      "price": "57000.00",
+      "url": "https://askalanyjewellery.com/products/diamond-and-ruby-pear-open-ring",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Yellow Gold Floral Cascade Ring",
+      "handle": "yellow-gold-floral-cascade-ring",
+      "description": "<p>Crafted in yellow gold, this ring combines curved diamond-set bands with floral-inspired clusters at the top. The layered design creates dimension and sparkle, making it a standout accessory for both day and evening wear.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 1.78 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/548.jpg?v=1758196555",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/548.jpg?v=1758196555",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/WhatsApp_Image_2025-09-30_at_12.03.52_PM.jpg?v=1759223640"
+      ],
+      "price": "202650.00",
+      "url": "https://askalanyjewellery.com/products/yellow-gold-floral-cascade-ring",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dual-Tone Cascading Diamond Ring",
+      "handle": "dual-tone-cascading-diamond-ring",
+      "description": "<p>Featuring a striking blend of rose and white gold, this ring is designed with cascading rows of marquise and round diamonds that flow gracefully across the finger. A bold, statement-making piece that symbolizes movement and elegance.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 1.48 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat White and Rose Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/541.jpg?v=1758196460",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/541.jpg?v=1758196460",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-17.jpg?v=1764591990",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-8.jpg?v=1764591983"
+      ],
+      "price": "162750.00",
+      "url": "https://askalanyjewellery.com/products/dual-tone-cascading-diamond-ring",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Royal Ruby Diamond Ring",
+      "handle": "royal-ruby-diamond-ring",
+      "description": "<p>A vivid ruby takes center stage in this luxurious design, surrounded by marquise and round diamonds arranged in a floral-inspired burst. The warm tones of gold enhance the richness of the ruby, creating a regal look. Ideal for special occasions, this ring embodies passion, power, and sophistication.<br></p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.82 Carats</p>\n<p>Ruby Weight: Around 0.60 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Rose Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/501.jpg?v=1758195085",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/501.jpg?v=1758195085",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/WhatsApp_Image_2025-09-30_at_12.03.51_PM_1.jpg?v=1759223726",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/WhatsApp_Image_2025-09-30_at_12.03.50_PM.jpg?v=1759223732"
+      ],
+      "price": "75600.00",
+      "url": "https://askalanyjewellery.com/products/royal-ruby-diamond-ring",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Multi-Shaped Open Diamond Ring",
+      "handle": "multi-shaped-open-diamond-ring",
+      "description": "<p>A perfect blend of contemporary design and timeless elegance, the Multi-Shaped Open Diamond Ring is a statement of modern luxury. This open-band ring is both striking and sophisticated, offering a bold yet refined look. Our Diamonds are G Color VS Clarity.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.68 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat White Gold</p>\n<p> </p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/17.png?v=1742323195",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/17.png?v=1742323195"
+      ],
+      "price": "74550.00",
+      "url": "https://askalanyjewellery.com/products/multi-shaped-open-diamond-ring",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Marquise Bold Ring",
+      "handle": "marquise-bold-ring",
+      "description": "<p data-start=\"141\" data-end=\"468\" class=\"\">Sleek, striking, and undeniably sophisticated, the Marquise Bold Ring is designed for those who appreciate bold elegance with a modern twist. Featuring 0.10 carats of brilliant round diamonds (R) and 0.15 carats of refined baguette diamonds (B), this ring delivers a perfect blend of classic sparkle and contemporary style. Our Diamonds are G Color VS Clarity.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.25 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>\n<p> </p>\n<p data-start=\"470\" data-end=\"720\" class=\"\"> </p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/14_1.png?v=1742323055",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/14_1.png?v=1742323055"
+      ],
+      "price": "58608.00",
+      "url": "https://askalanyjewellery.com/products/marquise-bold-ring",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Assorted Diamond Ring",
+      "handle": "assorted-diamond-ring",
+      "description": "<p>The Assorted Diamond Ring is a captivating and versatile piece that exudes timeless elegance with a contemporary twist. Featuring 0.34 carats of brilliant round diamonds (R05), this ring is designed to showcase a harmonious blend of sparkling simplicity and refined luxury.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.34 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>\n<p> </p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/7.jpg?v=1742221354",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/7.jpg?v=1742221354"
+      ],
+      "price": "40950.00",
+      "url": "https://askalanyjewellery.com/products/assorted-diamond-ring",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Allure Diamond Ring",
+      "handle": "allure-diamond-ring",
+      "description": "<p>With its captivating design and radiant sparkle, the Allure is the epitome of timeless sophistication. Featuring 0.55 carats of brilliant round diamonds (R) and 0.41 carats of stunning pear-shaped diamonds (PR), this ring is a true statement of luxury and refinement. Our Diamonds are G Color VS Clarity.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.96 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>\n<p> </p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/11.jpg?v=1742221712",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/11.jpg?v=1742221712",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/WhatsApp_Image_2025-09-30_at_12.03.52_PM_1_b680baf1-cd1e-41a4-b486-eff051cd4fcf.jpg?v=1759223929"
+      ],
+      "price": "88200.00",
+      "url": "https://askalanyjewellery.com/products/allure-diamond-ring",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Multi-Tier Emerald-Shaped Diamond Ring",
+      "handle": "multi-tier-emerald-shaped-diamond-ring",
+      "description": "<p>The Multi-Tier Emerald Shaped Diamond Ring is a captivating fusion of elegance, brilliance, and modern design. Featuring 1.21 carats of radiant round diamonds (R), complemented by 0.18 carats of baguette diamonds (B). This exquisite ring creates a layered, multi-dimensional effect that catches the light from every angle. Our Diamonds are G Color VS Clarity.</p>\n<p> </p>\n<p>Product Details:</p>\n<p>Diamond Weight: 1.31 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat White Gold</p>\n<p> </p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/3.jpg?v=1742221073",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/3.jpg?v=1742221073"
+      ],
+      "price": "102900.00",
+      "url": "https://askalanyjewellery.com/products/multi-tier-emerald-shaped-diamond-ring",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3 Lignes d’Éclat Ring",
+      "handle": "three-lignes-d-eclat-ring",
+      "description": "<p data-start=\"683\" data-end=\"1063\">A sculptural three-layered ring crafted in polished gold, featuring delicately spaced diamonds across each band. The open spacing enhances the play of light, giving the illusion of diamonds floating effortlessly along the finger. With its architectural silhouette and balanced proportions, the design feels both contemporary and timeless—an elevated essential with a refined edge.</p>\n<p data-start=\"1065\" data-end=\"1085\"><strong data-start=\"1065\" data-end=\"1085\">Product Details:</strong></p>\n<p data-start=\"1087\" data-end=\"1163\">Diamond Weight: Around 0.57 Carats<br data-start=\"1121\" data-end=\"1124\">Diamond Quality: G color / VS Clarity</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/3bandsring.jpg?v=1775576090",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/3bandsring.jpg?v=1775576090"
+      ],
+      "price": "64000.00",
+      "url": "https://askalanyjewellery.com/products/three-lignes-d-eclat-ring",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Aurelia Oval Ring",
+      "handle": "aurelia-oval-ring",
+      "description": "<p data-start=\"1232\" data-end=\"1571\">A bold gold ring centered around an oval diamond cluster, designed to command attention with quiet confidence. The clustered arrangement creates a rich focal point, amplifying brilliance while maintaining a harmonious silhouette. With its structured form and luminous core, this piece evokes timeless elegance with a contemporary presence.</p>\n<p data-start=\"1573\" data-end=\"1593\"><strong data-start=\"1573\" data-end=\"1593\">Product Details:</strong></p>\n<p data-start=\"1595\" data-end=\"1671\">Diamond Weight: Around 0.36 Carats<br data-start=\"1629\" data-end=\"1632\">Diamond Quality: G color / VS Clarity</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/OvalBoldRing.jpg?v=1775574985",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/OvalBoldRing.jpg?v=1775574985"
+      ],
+      "price": "65000.00",
+      "url": "https://askalanyjewellery.com/products/aurelia-oval-ring",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Éclat Bombé Ring",
+      "handle": "eclat-bombe-ring",
+      "description": "<p data-start=\"721\" data-end=\"1087\">A voluminous bombé ring in polished gold, adorned with a seemingly spontaneous scattering of brilliant diamonds across its curved surface. The organic placement enhances the dome’s dimension, allowing light to catch from every angle. Bold yet fluid, this design captures a sense of effortless luxury—perfect for those drawn to statement pieces with an artistic edge.</p>\n<p data-start=\"1089\" data-end=\"1109\"><strong data-start=\"1089\" data-end=\"1109\">Product Details:</strong></p>\n<p data-start=\"1111\" data-end=\"1187\">Diamond Weight: Around 0.83 Carats<br data-start=\"1145\" data-end=\"1148\">Diamond Quality: G color / VS Clarity</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/DiamondBombeRing.jpg?v=1775574815",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/DiamondBombeRing.jpg?v=1775574815"
+      ],
+      "price": "90000.00",
+      "url": "https://askalanyjewellery.com/products/eclat-bombe-ring",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Multi-Shaped Open Ring",
+      "handle": "multi-shaped-open-ring",
+      "description": "<p data-start=\"136\" data-end=\"585\">A contemporary open ring crafted in yellow gold, featuring a curated composition of mixed diamond shapes that create a sense of rhythm and individuality. The interplay of cuts—ranging from round to elongated silhouettes—offers a modern yet timeless aesthetic. Designed with negative space in mind, the open structure feels light on the hand while maintaining a bold, sculptural presence. A piece that effortlessly balances creativity and refinement.</p>\n<p data-start=\"587\" data-end=\"607\"><strong data-start=\"587\" data-end=\"607\">Product Details:</strong></p>\n<p data-start=\"609\" data-end=\"685\">Diamond Weight: Around 0.70 Carats<br data-start=\"643\" data-end=\"646\">Diamond Quality: G color / VS Clarity</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/multishapedopenringgold.jpg?v=1775574725",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/multishapedopenringgold.jpg?v=1775574725"
+      ],
+      "price": "62000.00",
+      "url": "https://askalanyjewellery.com/products/multi-shaped-open-ring",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pear Open Ring",
+      "handle": "pear-open-ring",
+      "description": "<p data-start=\"1715\" data-end=\"2051\">An open ring design featuring delicate pear-shaped diamond clusters that gracefully face one another. Set in warm yellow gold, the composition feels both airy and intentional, with each cluster adding a soft, feminine brilliance. The open silhouette enhances its modernity, making it an effortless piece for layering or standalone wear.</p>\n<p data-start=\"2053\" data-end=\"2073\"><strong data-start=\"2053\" data-end=\"2073\">Product Details:</strong></p>\n<p data-start=\"2075\" data-end=\"2151\">Diamond Weight: Around 0.86 Carats<br data-start=\"2109\" data-end=\"2112\">Diamond Quality: G color / VS Clarity</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/OpenTwoPearRing.jpg?v=1775575064",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/OpenTwoPearRing.jpg?v=1775575064"
+      ],
+      "price": "65000.00",
+      "url": "https://askalanyjewellery.com/products/pear-open-ring",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Multi-Shaped Flow Diamond Bangle",
+      "handle": "multi-shaped-flow-diamond-bangle",
+      "description": "<p>Featuring a graceful arrangement of alternating marquise and round diamonds, this gold bangle embodies fluid elegance. The organic pattern flows seamlessly, making it both timeless and versatile for stacking or solo wear.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.90 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/IMG_0090.jpg?v=1758887437",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/IMG_0090.jpg?v=1758887437",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/1_18a18400-c52e-4c12-a6c5-89575ce28962.png?v=1763380450",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/WhatsApp_Image_2025-09-30_at_12.03.53_PM_1.jpg?v=1763380450",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/WhatsAppImage2025-09-30at12.03.53PM_2.jpg?v=1763380450"
+      ],
+      "price": "208950.00",
+      "url": "https://askalanyjewellery.com/products/multi-shaped-flow-diamond-bangle",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Halo Elegance Diamond Bracelet",
+      "handle": "halo-elegance-diamond-bracelet",
+      "description": "<p>Crafted in white gold, this bracelet features a continuous row of round diamond clusters, each framed by a shimmering halo for added brilliance. The bezel-inspired setting enhances both sparkle and security, while the classic design makes it a versatile piece that transitions effortlessly from day to evening. A refined twist on the timeless tennis bracelet.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 2.21 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat White Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/3_ee9e246e-c6db-4cf7-a697-dec920d52697.jpg?v=1758017971",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/3_ee9e246e-c6db-4cf7-a697-dec920d52697.jpg?v=1758017971",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/10.png?v=1763377315"
+      ],
+      "price": "245700.00",
+      "url": "https://askalanyjewellery.com/products/halo-elegance-diamond-bracelet",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Celestial Cluster Open Bangle",
+      "handle": "celestial-cluster-open-bangle",
+      "description": "<p>A modern open bangle in polished gold, featuring dazzling diamond cluster motifs at each end. Each cluster sparkles like a constellation, with pavé diamonds creating a brilliant burst of light. The slim band, lined with additional diamonds, adds extra radiance—making this piece both chic and versatile, perfect for stacking or wearing as a standalone statement.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 1.60 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/8_0f3f77cc-8b01-48c0-80ec-cdde3d0172a4.jpg?v=1758017449",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/8_0f3f77cc-8b01-48c0-80ec-cdde3d0172a4.jpg?v=1758017449",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/50_b4317ab6-c73b-476b-a1ca-623328d54200.png?v=1758708079",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/49_95220058-900e-4a66-8353-19bbb533af07.png?v=1758708089",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/46_a058e70d-618c-4c88-97bb-388ca3e765ef.png?v=1758708097"
+      ],
+      "price": "200550.00",
+      "url": "https://askalanyjewellery.com/products/celestial-cluster-open-bangle",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Imperial Baguette Embrace Bangle",
+      "handle": "imperial-baguette-embrace-bangle",
+      "description": "<p>An exquisite gold bangle featuring twin rows of pavé-set diamonds that gracefully curve toward a striking centerpiece of baguette and princess-cut diamonds. The fluid design highlights both brilliance and structure, blending modern geometry with timeless elegance. A statement of refined luxury, perfect for evening wear or elevating any sophisticated look.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.91 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/5_73da4963-7f97-4f6f-92a9-57cbfcabcadb.jpg?v=1758017358",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/5_73da4963-7f97-4f6f-92a9-57cbfcabcadb.jpg?v=1758017358",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-33.jpg?v=1764599375",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/heranovember-32.jpg?v=1764599375"
+      ],
+      "price": "143850.00",
+      "url": "https://askalanyjewellery.com/products/imperial-baguette-embrace-bangle",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Regal Pear Baguette Bangle",
+      "handle": "regal-marquise-baguette-bangle",
+      "description": "<p>This striking gold bangle features a series of pear-shaped frames, each set with rows of baguette-cut diamonds and bordered by brilliant rounds. The geometric precision of baguettes combined with the soft curves of marquise motifs creates a captivating play of sparkle and symmetry. A bold yet elegant design, perfect for making a statement whether worn alone or paired with other bangles.</p>\n<p>Product Details:</p>\n<p>Diamond Weight: Around 0.88 Carats</p>\n<p>Diamond Quality: G color / VS Clarity</p>\n<p>Metal: 18 Karat Yellow Gold</p>",
+      "image": "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/491.jpg?v=1758019384",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/491.jpg?v=1758019384",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/15_8f0dc8ce-b48e-4fee-9ec9-2ad84818856e.jpg?v=1763378144",
+        "https://cdn.shopify.com/s/files/1/0912/7549/3671/files/july-18_7b8bbe87-ac53-47b2-816d-535baebaef52.jpg?v=1763378144"
+      ],
+      "price": "154350.00",
+      "url": "https://askalanyjewellery.com/products/regal-marquise-baguette-bangle",
+      "options": [
+        {
+          "name": "Title",
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    }
+  ]
+}
