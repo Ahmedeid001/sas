@@ -102,7 +102,7 @@
       header.style.willChange = "transform";
       header.style.transition = "transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)";
       const messages = [
-        "20% OFF code: kilimmasr20",
+        "5-Year Warranty",
         "Made with love",
         "Customize your piece"
       ];
