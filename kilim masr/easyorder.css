@@ -48,7 +48,7 @@
 section.checkout_order_summary.bg-gray-50.px-4.pt-16.pb-10.sm\:px-6.lg\:col-start-2.lg\:row-start-1.lg\:bg-transparent.lg\:px-0.lg\:pb-16 {
     background: #f5f5f5;
     padding-top: 30px;
-    padding-bottom: 0px;
+    padding-bottom: 20px;
 }
     .shopify-thumb-item {
         flex: 0 0 65px;
@@ -895,7 +895,18 @@ button.group.relative.flex.items-center.p-2.rounded-full.hover\:opacity-80 {
     BACKGROUND: #FFF;
     COLOR: #000;
     TOP: 4px;
-}body:has(.checkout_container) footer,
+}
+main.mx-auto.py-8.px-4.sm\:py-10.sm\:px-6.w-full.max-w-full.h-full {
+    padding-top: 4rem;
+}span.absolute.left-1\/2.top-0.-translate-x-1\/2.-translate-y-1\/2.-z-10.text-3xl.md\:text-4xl.text-\[\#61758A1F\].select-none.whitespace-nowrap.overflow-hidden.text-ellipsis.max-w-full {
+    display: none;
+}.relative.overflow-hidden.w-full.h-full.rounded-xl.object-cover {
+    aspect-ratio: 1/1;
+    border-radius: 1px !important;
+}img.transition-opacity.w-full.h-full.opacity-100.animate-zoom-fade.w-full.h-full.rounded-xl.object-cover {
+    border-radius: 1px;
+}
+body:has(.checkout_container) .features-minimal,
 body:has(.checkout_container) .custom-footer-container,
 body:has(.checkout_container) #custom-kiliim-footer,
 body:has(.checkout_container) .footer-section {
@@ -938,7 +949,9 @@ del.km-price-styled::before, .line-through.km-price-styled::before {content: "LE
         padding-right: 10px; /* مسافة من اليمين */
         padding-left: 10px; /* مسافة من اليسار */
         scrollbar-width: none; /* إخفاء شريط التمرير */gap: 10px;
-    }
+    }ul.grid.grid-cols-3.md\:grid-cols-4.xl\:grid-cols-5.gap-5.mt-8.md\:mt-12 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
     .md\:hidden.flex.flex-row.overflow-x-auto::-webkit-scrollbar {
         display: none;
     }
