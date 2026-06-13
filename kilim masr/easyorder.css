@@ -673,11 +673,12 @@ h2#contact-info-heading {
     margin-bottom: 10px; /* تظبيط مسافة بسيطة */
 }
 h2#contact-info-heading::before {
-    content: "Delivery"; /* الكلمة الجديدة */
-    font-size: 21px !important; /* نرجع حجم الخط الطبيعي */
-    font-weight: bold !important; /* نخليها Bold */
-    color: #000 !important; 
-    display: block;  
+    content: "Delivery";
+    font-size: 21px !important;
+    font-weight: 500;
+    color: #242424 !important;
+    display: block;
+    font-family: sans-serif;
 }
 span.payment_card_description.w-fit.text-sm.text-\[\#778399\].mt-1 {
     display: none;
