@@ -49,8 +49,7 @@
 
         el.innerHTML = formatted + CONFIG.currencySuffix;
 
-        el.style.direction = 'ltr';
-        el.style.unicodeBidi = 'isolate';
+         el.style.unicodeBidi = 'isolate';
 
         el.dataset.formatted = 'true';
     }
