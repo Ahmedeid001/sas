@@ -1,7 +1,8 @@
 (function () {
     var CONFIG = {
         btnText: 'إضافة للسلة',
-        pricePrefix: 'ج.م ',
+        pricePrefix: '',
+        currencySuffix: ' ج.م',
         debounceMs: 300
     };
 
@@ -46,8 +47,11 @@
             maximumFractionDigits: 2
         });
 
-        el.innerHTML = CONFIG.pricePrefix + formatted;
-        el.style.direction = 'rtl';
+        el.innerHTML = formatted + CONFIG.currencySuffix;
+
+        el.style.direction = 'ltr';
+        el.style.unicodeBidi = 'isolate';
+
         el.dataset.formatted = 'true';
     }
 
